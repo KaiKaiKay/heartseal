@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+
+body {
+    font-family: "Noto Serif JP", Helvetica, Arial, sans-serif, serif;
+    font-style: normal;
+}
+
+
+h2,
+h3 {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+
+header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-image: url(/heartseal/pic/bg1.webp);
+    background-size: 10%;
+    /* position: absolute; */
+    margin: auto;
+}
+
+
+header .top {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: auto;
+    /* border: #CF272A 1px solid ; */
+}
+
+
+header .logo {
+    box-sizing: border-box;
+    width: 86px;
+    padding: 10px;
+    /* border: #CF272A 1px solid ; */
+}
+
+
+header .logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+header .nav-area {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+header nav {
+    font-size: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+
+header nav a {
+    text-decoration: none;
+    font-family: "Noto Serif JP";
+    color: black;
+    font-size: 18px;
+    padding: 0 10px;
+    margin: 0 5px;
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+header nav a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #CF272A;
+    transform: scaleX(0);
+    transition: .2s;
+}
+
+
+header nav a:hover:after {
+    transform: scaleX(1);
+}
+
+header nav .main-menu {
+    display: flex;
+}
+
+header nav .main-menu>li {
+    /* border: 1px solid #f00; */
+    padding: 4px;
+    position: relative;
+}
+
+header nav .main-menu>li>a {
+    display: block;
+    padding: 0 20px 10px 20px;
+    text-decoration: none;
+    margin: auto;
+    /* border: 1px solid #00f; */
+}
+
+header nav .sub-menu {
+    display: none;
+    position: absolute;
+    /* top: 120%; */
+    padding-top: 10px;
+    /* border: 1px solid green; */
+}
+
+header nav .sub-menu a {
+    display: block;
+    padding: 15px 15px;
+    /* border: 1px solid; */
+    background-image: url(/heartseal/pic/bg1.webp);
+    background-size: 50%;
+    color: #4b4b4b;
+}
+
+header nav li:hover .sub-menu {
+    display: block;
+}
+
+
+header .icon {
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+
+header .icon .user,
+.icon .shopcart {
+    display: inline-block;
+}
+
+
+header .icon .user {
+    margin: 0 30px 0 15px;
+}
+
+
+header .icon .user:hover,
+.icon .shopcart:hover {
+    transform: translateY(-100%);
+    filter: drop-shadow(0 30px #CF272A);
+}
+
+/* 以上是header */
+footer {
+    width: 100%;
+    background-image: url(/heartseal/pic/bg1.webp);
+    background-size: 10%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* border: #CF272A 1px solid; */
+}
+
+.footer_inner {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+
+.footer_inner .txt {
+    color: #4b4b4b;
+    width: 33.333333%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: start; */
+    text-align: left;
+}
+
+.footer_inner .txt .sns {
+    display: flex;
+}
+
+.footer_inner .txt .icon {
+    color: #4b4b4b;
+    align-items: center;
+}
+
+.footer_inner .txt .icon .line {
+    margin: 0 10px;
+}
+
+.footer_inner .copyright {
+    color: #4b4b4b;
+    width: 33.333333%;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 3;
+    text-align: right;
+}
+
+.footer_inner .address {
+    display: flex;
+}
+
+.footer_logo {
+    width: 250px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: #CF272A 1px solid; */
+}
+
+.footer_logo img {
+    width: 100%;
+}
+
+/* 以上是footer */
+.products {
+    background-image: url(/heartseal/pic/bg2.webp);
+    background-size: 20%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.products .main_products {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: #CF272A 1px solid; */
+    margin: 130px auto 90px;
+}
+
+.products .main_products .pic {
+    width: 58.33333%;
+}
+
+.products .main_products img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+.products .main_products .txt {
+    width: 33.333333%;
+    display: flex;
+    flex-direction: column;
+    /* border: #CF272A 1px solid; */
+    margin: 0px auto;
+    line-height: 1.5;
+    justify-content: space-around;
+}
+
+.products .main_products h2 {
+    font-family: "Noto Serif JP";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 4px;
+    /* text-align: center; */
+}
+
+.products .main_products h3 {
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 4px;
+    /* text-align: center; */
+    padding-bottom: 20px;
+}
+
+.products .main_products h3::before,
+.products .main_products h3::after {
+    content: '—';
+}
+
+
+.products .main_products .money {
+    font-family: "Noto Serif JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    /* padding-top: 20px; */
+    display: flex;
+    align-items: center;
+}
+
+.products .main_products .money span {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.products select {
+    background: #4b4b4b;
+    color: #fafafa;
+    margin: 5px;
+    width: 150px;
+    height: 3em;
+    padding: 8px;
+    position: relative;
+    border-radius: 5px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(#4b4b4b, #4b4b4b);
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), -webkit-linear-gradient(#4b4b4b, #4b4b4b);
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), -moz-linear-gradient(#4b4b4b, #4b4b4b);
+    background-position: right 0.5em top 50%, 0 0;
+    background-size: contain, cover;
+    background-repeat: no-repeat, repeat;
+}
+
+.products .favorite {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.products .favorite button {
+    border: 0;
+    outline-style: none;
+    background-color: #0000;
+    width: 20px;
+    height: 20px;
+    /* margin: 10px 5px; */
+}
+
+.products .favorite p {
+    display: flex;
+    margin: 0 10px
+}
+
+.products .shop_button .input {
+    color: #CF272A;
+    border: #CF272A solid 1px;
+    background-color: #0000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 45px;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 100px;
+    margin: 0px 10px 10px 0;
+}
+
+.products .shop_button .now {
+    color: #ffffff;
+    border: #CF272A solid 1px;
+    background-color: #CF272A;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 45px;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 100px;
+    margin: 0px 10px 10px 0;
+}
+
+.products .other_products {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: #CF272A 1px solid; */
+    margin: 90px auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+
+.products .other_products .item {
+    /* border: #CF272A 1px solid; */
+    width: 33%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.products .other_products .item .pic {
+    box-sizing: border-box;
+}
+
+.products .other_products .item img {
+    width: 100%;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+.products .other_products .item h3 {
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 20PX 0;
+}
+
+.products .other_products .item .money {
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.products .back {
+    color: #CF272A;
+    border: #CF272A solid 1px;
+    background-color: #0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 100px;
+    margin: 0 auto 150px;
+}
+
+
+
+/* 以上是裝飾區 decorate*/
+
+.products .breadcrumb {
+    z-index:  1;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 40px;
+    left: 18%;
+    /* border: #CF272A 1px solid; */
+}
+
+.products .custom-separator li {
+    padding: 0 20px;
+}
+
+.products .custom-separator a {
+    text-decoration: none;
+    color: #585858;
+    font-family: "Noto Serif JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.products .custom-separator a:hover {
+    color: #CF272A;
+}
+
+/* 以上是breadcrumb麵包屑 */
+.products .decorate .bg_line {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    z-index: 1;
+}
+
+.products .decorate .bg_seal {
+    position: absolute;
+    bottom: 40px;
+    right: 120px;
+    width: 120px;
+    z-index: 1;
+}

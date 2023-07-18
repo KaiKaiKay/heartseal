@@ -25,7 +25,7 @@ header {
     position: relative;
     z-index: 1;
     width: 100%;
-    background-image: url(/pic/bg1.webp);
+    background-image: url(./pic/bg1.webp);
     background-size: 10%;
     /* position: absolute; */
     margin: auto;
@@ -132,7 +132,7 @@ header nav .sub-menu a {
     display: block;
     padding: 15px 15px;
     /* border: 1px solid; */
-    background-image: url(/pic/bg1.webp);
+    background-image: url(./pic/bg1.webp);
     background-size: 50%;
     color: #4b4b4b;
 }
@@ -167,10 +167,11 @@ header .icon .user:hover,
     transform: translateY(-100%);
     filter: drop-shadow(0 30px #CF272A);
 }
+
 /* 以上是header */
 footer {
     width: 100%;
-    background-image: url(/pic/bg1.webp);
+    background-image: url(./pic/bg1.webp);
     background-size: 10%;
     display: flex;
     justify-content: center;
@@ -180,7 +181,7 @@ footer {
 }
 
 .footer_inner {
-width: 1200px;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -277,7 +278,7 @@ width: 1200px;
 
 /* 以上是footer */
 
-.products .breadcrumb{
+.products .breadcrumb {
     display: flex;
     /* border: #CF272A 1px solid; */
     position: absolute;
@@ -287,11 +288,11 @@ width: 1200px;
 
 }
 
-.products .custom-separator li{
+.products .custom-separator li {
     padding: 0 20px;
 }
 
-.products .custom-separator a{
+.products .custom-separator a {
     text-decoration: none;
     color: #585858;
     font-family: "Noto Serif JP";
@@ -301,7 +302,7 @@ width: 1200px;
     letter-spacing: 4px;
 }
 
-.products .custom-separator a:hover{
+.products .custom-separator a:hover {
     color: #CF272A;
 }
 
@@ -312,7 +313,7 @@ width: 1200px;
     width: 1920px;
     height: 600px;
     /* border: #CF272A 1px solid; */
-    background-image: url(/pic/bg2.webp);
+    background-image: url(./pic/bg2.webp);
     background-size: 20%;
     position: relative;
 }
@@ -363,7 +364,7 @@ width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/pic/bg2.webp);
+    background-image: url(./pic/bg2.webp);
     background-size: 20%;
 }
 

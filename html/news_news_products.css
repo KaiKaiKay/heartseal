@@ -22,7 +22,7 @@
     margin: 0 0 90px 0;
 }
 
-.news .inner h2 {
+.inner h2 {
     font-family: "Noto Serif JP";
     text-decoration: underline #4b4b4b 1px;
     text-underline-offset: 15px;
@@ -86,8 +86,12 @@
     letter-spacing: 4px;
 }
 
-button{
+button a{
     color: #CF272A;
+    text-decoration: none;
+}
+
+button{
     border: #CF272A solid 1px;
     background-color: #0000;
     width: 150px;

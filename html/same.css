@@ -165,7 +165,7 @@ header .icon .user:hover,
 
 footer {
     width: 100%;
-    background-image: url(/pic/bg1.webp);
+    background-image: url(../pic/bg1.webp);
     background-size: 10%;
     display: flex;
     justify-content: center;

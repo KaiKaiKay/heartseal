@@ -209,24 +209,6 @@
     rotate: 180deg;
 } 
 
-.index.hot .more.button {
-    color: #CF272A;
-    border: #CF272A solid 1px;
-    background-color: #0000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 150px;
-    height: 40px;
-    margin: 60px auto 0;
-    font-family: "Noto Sans JP";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    border-radius: 100px;
-}
-
 .interlude {
     width: 100%;
     background-image: url(../pic/bg2.webp);
@@ -388,7 +370,7 @@
     flex-direction: row-reverse;
 }
 
-.products.inner .more_button {
+.more.button {
     color: #CF272A;
     border: #CF272A solid 1px;
     background-color: #0000;
@@ -404,6 +386,11 @@
     font-style: normal;
     font-weight: 500;
     border-radius: 100px;
+}
+
+.more.button a{
+    color: #CF272A;
+    text-decoration: none;
 }
 
 

@@ -100,7 +100,7 @@
     font-weight: 900;
     line-height: 48px;
     letter-spacing: 4px;
-    width: 30%;
+    width: 20%;
     height: 5.416666%;
     border: #585858 1px solid;
     text-align: center;
@@ -118,6 +118,8 @@
     font-weight: 400;
     letter-spacing: 4px;
     text-decoration: none;
+    flex: 1;
+    min-width: 0;
 }
 
 .decorate .bg_line {

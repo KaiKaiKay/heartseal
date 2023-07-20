@@ -1,4 +1,4 @@
-.index.banner .banner.pic{
+.index.banner .banner.pic {
     width: 100%;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .index.about .decorate .bg_line {
-    width: 100%; 
+    width: 100%;
 }
 
 .index.about .decorate .bg_line img {
@@ -80,7 +80,7 @@
     top: -5%;
     left: 0%;
     width: 100%;
-} 
+}
 
 .index.hot {
     width: 100%;
@@ -187,10 +187,12 @@
 }
 
 .index.hot .decorate .bg.txt {
+    pointer-events: none;
     width: 100%;
 }
 
 .index.hot .decorate .bg.txt img {
+    pointer-events: none;
     position: absolute;
     top: 6%;
     left: 44.8%;
@@ -198,7 +200,8 @@
 }
 
 .index.hot .decorate .bg_line {
-    width: 100%; 
+    pointer-events: none;
+    width: 100%;
 }
 
 .index.hot .decorate .bg_line img {
@@ -207,7 +210,7 @@
     left: 0%;
     width: 100%;
     rotate: 180deg;
-} 
+}
 
 .interlude {
     width: 100%;
@@ -253,7 +256,7 @@
     /* border: #CF272A 1px solid; */
 }
 
-.interlude .inner .contents img{
+.interlude .inner .contents img {
     width: 100%;
     vertical-align: top;
 }
@@ -270,7 +273,7 @@
 }
 
 .interlude .decorate .bg.seal {
-    width: 100%; 
+    width: 100%;
 }
 
 .interlude .decorate .bg.seal img {
@@ -279,7 +282,7 @@
     right: 13%;
     width: 12%;
     rotate: 25deg;
-} 
+}
 
 .products {
     width: 100%;
@@ -388,16 +391,17 @@
     border-radius: 100px;
 }
 
-.more.button a{
+.more.button a {
     color: #CF272A;
     text-decoration: none;
 }
 
-.products .inner .decorate .bg_line{
+.products .inner .decorate .bg_line {
+    pointer-events: none;
     width: 100%;
 }
 
-.products .inner .decorate .bg_line img{
+.products .inner .decorate .bg_line img {
     position: absolute;
     bottom: -4%;
     right: 0%;
@@ -405,26 +409,24 @@
 }
 
 
-.products .inner .decorate .bg_seal{
+.products .inner .decorate .bg_seal {
     width: 100%;
 }
 
-.products .inner .decorate .bg_seal img{
+.products .inner .decorate .bg_seal img {
     position: absolute;
     bottom: 3%;
     right: 10%;
     width: 9%;
 }
 
-.products .inner .decorate .bg_txt{
+.products .inner .decorate .bg_txt {
     width: 100%;
 }
 
-.products .inner .decorate .bg_txt img{
+.products .inner .decorate .bg_txt img {
     position: absolute;
     top: 2%;
     left: 33%;
     width: 35%;
 }
-
-

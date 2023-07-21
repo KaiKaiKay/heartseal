@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心印｜會員登入</title>
+    <link rel="stylesheet" href="same.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="logo">
+                <a href="index.new.html"><img src="../pic/logo.png"></a>
+            </div>
+            <div class="nav-area">
+                <div class="nav">
+                    <nav>
+                        <ul class="main-menu">
+                            <li>
+                                <a href="about.html">關於我們</a>
+                            </li>
+                            <li>
+                                <a href="news.html">最新消息</a>
+                            </li>
+                            <li>
+                                <a href="products.html">產品系列</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">所有商品</a></li>
+                                    <li><a href="#">牛角系列</a></li>
+                                    <li><a href="#">原木系列</a></li>
+                                    <li><a href="#">寶石系列</a></li>
+                                    <li><a href="#">公司印鑑</a></li>
+                                    <li><a href="#">結婚對章</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="customize_introduction.html">客製專區</a>
+                                <ul class="sub-menu">
+                                    <li><a href="customize_form.html">客製表單</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="icon">
+                    <div class="user">
+                        <a class="icon-link user" href="#">
+                        <img src="../pic/user.png"></a>
+                    </div>
+                    <div class="shopcart">
+                        <a class="icon-link shopcart"  href="#"><img src="../pic/shopping cart.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="login" id="login">
+        <h2>會員登入</h2>
+        <form> <input type="text" name="name" placeholder="請輸入信箱"> <input type="email" name="password"
+                placeholder="請輸入密碼">
+            <button class="login_btn">登入</button>
+            <h3>快速登入</h3>
+            <div class="sns">
+                <a class="sns_icon line" href="#"><img src="../pic/line2.png" alt="Line"></a>
+                <a class="sns_icon fb" href="#"><img src="../pic/fb2.png" alt="Facebook"></a>
+                <a class="sns_icon email" href="#"><img src="../pic/email.png" alt="Email"></a>
+            </div>
+        </form>
+        <button class="close_btn"><img src="../pic/x.png" alt="close"></button>
+        <script>
+            const userDiv = document.querySelector(".user");
+            const loginSection = document.getElementById("login");
+
+            userDiv.addEventListener("click", () => {
+                loginSection.style.display = "flex";
+            });
+
+            const closeBtn = document.querySelector(".close_btn");
+            closeBtn.addEventListener("click", () => {
+                loginSection.style.display = "none";
+            });
+        </script>
+    </section>
+</body>
+
+</html>

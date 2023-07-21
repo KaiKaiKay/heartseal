@@ -229,7 +229,7 @@
     color: white;
 }
 
-.products button:hover {
+.products .back:hover {
     border: white solid 1px;
     background-color: #CF272A;
 }

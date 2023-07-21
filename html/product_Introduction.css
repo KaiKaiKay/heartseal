@@ -37,7 +37,7 @@
 }
 
 .products .main_products h2 {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -45,7 +45,7 @@
 }
 
 .products .main_products h3 {
-    font-family: Noto Sans KR;
+    font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -61,7 +61,7 @@
 
 
 .products .main_products .money {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -124,7 +124,7 @@
     text-align: center;
     width: 120px;
     height: 45px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -147,7 +147,7 @@
     text-align: center;
     width: 120px;
     height: 45px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -188,7 +188,7 @@
 }
 
 .products .other_products .item h3 {
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -196,7 +196,7 @@
 }
 
 .products .other_products .item .money {
-    font-family: "Noto Sans JP";
+    font-family:"Noto Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -211,7 +211,7 @@
     text-align: center;
     width: 150px;
     height: 45px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -252,7 +252,7 @@
 .products .custom-separator a {
     text-decoration: none;
     color: #585858;
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 900;

@@ -37,7 +37,7 @@
 }
 
 .inner h2 {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     width: 180px;
     font-size: 36px;
     font-style: normal;
@@ -63,7 +63,7 @@
 
 form.customize {
     color: #4b4b4b;
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -150,7 +150,7 @@ form.customize dl.form_lnf:nth-child(odd) {
     background-color: #0000;
     width: 150px;
     height: 45px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

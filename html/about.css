@@ -16,7 +16,7 @@
 }
 
 .about .inner h2 {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
@@ -55,15 +55,12 @@
 
 .card .item:nth-child(2) {
     flex-direction: row-reverse;
-
 }
 
 .card .item .pic {
     width: 30%;
     position: relative;
 }
-
-
 
 .card .item img {
     width: 100%;
@@ -74,7 +71,6 @@
 
 .card .item img:nth-child(2) {
     display: flex;
-
 }
 
 .card .item .pic span.bg {
@@ -88,8 +84,8 @@
 .card .item .txt {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    justify-content: space-around;
+    width: 45%;
+    justify-content: space-evenly;
 }
 
 .card .item h3 {
@@ -104,7 +100,7 @@
 
 .card .item p {
     color: #000;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

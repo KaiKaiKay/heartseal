@@ -40,6 +40,7 @@
 
 .index.about .inner h2 {
     font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, serif;
+    /* font-family:  "Noto Serif JP", Helvetica, Arial, sans-serif, serif; */
     writing-mode: vertical-rl;
     font-weight: 100;
     font-style: normal;
@@ -99,7 +100,7 @@
 }
 
 .index .hot h2 {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-style: normal;
     font-weight: 900;
     letter-spacing: 4px;
@@ -152,7 +153,7 @@
     font-size: 16px;
     /* border: #CF272A 1px solid; */
     text-align: left;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-weight: 400;
     font-style: normal;
 }
@@ -231,10 +232,11 @@
 
 .interlude .inner .contents p {
     font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, serif;
+    /* font-family:  "Noto Serif", Helvetica, Arial, sans-serif, serif; */
     font-weight: normal;
     text-align: center;
     font-weight: 100;
-    font-size: 40px;
+    font-size: 36px;
     display: flex;
     margin: 0 0 40px;
     line-height: 1;
@@ -377,7 +379,7 @@
     width: 150px;
     height: 40px;
     margin: 60px auto 0;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

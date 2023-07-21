@@ -18,7 +18,7 @@
 }
 
 .contact .inner h2 {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
@@ -74,7 +74,7 @@
 .card .item .txt {
     width: 35%;
     /* border: #CF272A 1px solid; */
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;
     font-weight: 350;

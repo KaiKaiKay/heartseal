@@ -17,7 +17,7 @@
     display: flex;
     width: 200px;
     text-align: center;
-    font-family: "Noto Serif JP", Helvetica, Arial, sans-serif, serif;
+    font-family: "Noto Serif", Helvetica, Arial, sans-serif, serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
@@ -67,13 +67,13 @@
 .products_inner .card .products_pic {
     width: 100%;
     vertical-align: top;
-    border-radius: 8px;
+    border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
 .products_inner .txt {
     text-align: center;
-    font-family: Noto Sans JP, Helvetica, Arial, sans-serif, serif;
+    font-family: "Noto Serif", Helvetica, Arial, sans-serif, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -83,7 +83,7 @@
 }
 
 .products_inner .txt .product_name {
-    font-family: Noto Sans JP;
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -176,7 +176,7 @@
 }
 
 .products_navbar .container .menu {
-    font-family: Noto Serif JP;
+    font-family:  "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 900;

@@ -16,7 +16,7 @@
 }
 
 .inner h2 {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
@@ -73,7 +73,7 @@
 /* 如果刪掉flex type邊框寬度就會變正常??? */
 
 .inner .card .date {
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -85,7 +85,7 @@
 .inner .card .hashtag {
     display: flex;
     color: #CF272A;
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
@@ -95,7 +95,7 @@
 
 .inner .card .type {
     color: #585858;
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
@@ -113,7 +113,7 @@
 .inner .card .txt {
     margin: 0 20px 0 50px;
     color: #4b4b4b;
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

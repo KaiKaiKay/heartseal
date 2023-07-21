@@ -23,7 +23,7 @@
 }
 
 .inner h2 {
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     text-decoration: underline #4b4b4b 1px;
     text-underline-offset: 15px;
     font-size: 36px;
@@ -83,7 +83,7 @@
 .card .txt {
     width: 58%;
     color: #4b4b4b;
-    font-family: "Noto Serif JP";
+    font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;
     font-weight: 350;
@@ -106,7 +106,7 @@ button {
     background-color: #0000;
     width: 180px;
     height: 45px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Serif";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

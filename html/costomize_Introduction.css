@@ -31,6 +31,7 @@
     position: relative;
     padding: 0 5px 10px ;
     text-align: center;
+    text-indent: 4px;
 }
 
 .inner h2::after {
@@ -166,15 +167,36 @@ padding: 20px;
     border-radius: 100px;
     margin: 0 auto 105px;
     display: block;
+    transition: .3s;
 }
 
+.customize .form:hover{
+    border: white solid 1px;
+    background-color: #CF272A;
+    color: white;
+}
+
+.customize .form a{
+    color: #CF272A;
+    text-decoration: none;
+}
+
+.customize .form:hover >a{
+    color: white;
+}
+
+
+
+
 .customize .decorate .bg_line {
+    pointer-events: none;
     position: absolute;
     bottom: -150px;
     left: 0;
 }
 
 .customize .decorate .bg_seal {
+    pointer-events: none;
     position: absolute;
     bottom: 40px;
     right: 120px;

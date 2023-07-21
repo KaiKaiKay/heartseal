@@ -6,6 +6,7 @@
     width: 100%;
     object-fit: cover;
     vertical-align: top;
+    transition: 0.3s;
 }
 
 .index.about {
@@ -46,6 +47,7 @@
     font-size: 40px;
     margin: 0px 150px 0 0;
     display: flex;
+    text-indent: 4px;
     /* border: #CF272A 1px solid; */
 }
 
@@ -155,36 +157,28 @@
     font-style: normal;
 }
 
+.hot .item img {
+    vertical-align: top;
+}
+
 .hot .item .btn {
-    width: 20px;
-    height: 20px;
-    padding: 3px;
-    margin: auto;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 10px;
-    right: 6px;
-    border: 0;
+    right: 7px;
+    padding: 3px;
     outline-style: none;
     background-color: #0000;
-}
-
-.hot .item .btn img {
-    width: 80%;
-    object-fit: cover;
-    position: absolute;
-    top: 7px;
-    right: 7px;
-}
-
-.hot .item .btn .background {
+    border: none;
     background-color: #CF272A;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
+
+.hot .item .btn:hover {
+    background-color: #f00;
+}
+
 
 .index.hot .decorate .bg.txt {
     pointer-events: none;
@@ -374,7 +368,6 @@
 }
 
 .more.button {
-    color: #CF272A;
     border: #CF272A solid 1px;
     background-color: #0000;
     display: flex;
@@ -389,11 +382,21 @@
     font-style: normal;
     font-weight: 500;
     border-radius: 100px;
+    transition: .3s;
 }
 
 .more.button a {
     color: #CF272A;
     text-decoration: none;
+}
+
+.more.button:hover>a {
+    color: white;
+}
+
+.more.button:hover {
+    border: white solid 1px;
+    background-color: #CF272A;
 }
 
 .products .inner .decorate .bg_line {

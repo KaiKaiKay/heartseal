@@ -84,6 +84,7 @@ header nav a {
     position: relative;
     font-style: normal;
     font-weight: 500;
+    text-indent: 4px;
 }
 
 
@@ -136,6 +137,9 @@ header nav .sub-menu a {
 
 header nav li:hover .sub-menu {
     display: block;
+}
+header nav li:hover .sub-menu>a{
+    color: #CF272A;
 }
 
 

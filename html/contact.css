@@ -28,6 +28,7 @@
     padding: 0 5px 10px ;
     text-align: center;
     width: 180px;
+    text-indent: 4px;
 }
 
 .contact .inner h2::after {
@@ -94,7 +95,7 @@
 iframe {
     position: relative;
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .map {
@@ -104,11 +105,11 @@ iframe {
 }
 
 .bg_map {
-    width: 800px;
+    width: 900px;
     height: 350px;
-    background-color: #CF272A;
-    bottom:300px;
-    left: -60px;
+    background-color: #c8c8c8;
+    bottom:320px;
+    left: -40px;
     position: relative;
     z-index: 0;
     border-radius: 4px;

@@ -22,7 +22,7 @@
 .products .main_products img {
     width: 100%;
     vertical-align: top;
-    border-radius: 8px;
+    border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
@@ -40,9 +40,8 @@
     font-family: "Noto Serif JP";
     font-size: 30px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 4px;
-    /* text-align: center; */
 }
 
 .products .main_products h3 {
@@ -84,7 +83,7 @@
     height: 3em;
     padding: 8px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 4px;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -125,12 +124,18 @@
     text-align: center;
     width: 120px;
     height: 45px;
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    border-radius: 100px;
+    border-radius: 400px;
     margin: 0px 10px 10px 0;
+    transition: .3s;
+}
+
+.products .shop_button .input:hover{
+    background-color: red;
+    color: #fafafa;
 }
 
 .products .shop_button .now {
@@ -142,12 +147,17 @@
     text-align: center;
     width: 120px;
     height: 45px;
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    border-radius: 100px;
+    border-radius: 400px;
     margin: 0px 10px 10px 0;
+    transition: .3s;
+}
+
+.products .shop_button .now:hover{
+    background-color: red;
 }
 
 .products .other_products {
@@ -162,7 +172,6 @@
 }
 
 .products .other_products .item {
-    /* border: #CF272A 1px solid; */
     width: 33%;
     box-sizing: border-box;
     padding: 0 10px;
@@ -174,7 +183,7 @@
 
 .products .other_products .item img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
@@ -194,7 +203,6 @@
 }
 
 .products .back {
-    color: #CF272A;
     border: #CF272A solid 1px;
     background-color: #0000;
     display: flex;
@@ -203,17 +211,29 @@
     text-align: center;
     width: 150px;
     height: 45px;
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    border-radius: 100px;
+    border-radius: 400px;
     margin: 0 auto 150px;
+    transition: .3s;
 }
 
+.products .back a{
+    color: #CF272A;
+    text-decoration: none;
+}
 
+.back:hover>a {
+    color: white;
+}
 
-/* 以上是裝飾區 decorate*/
+.products button:hover {
+    border: white solid 1px;
+    background-color: #CF272A;
+}
+
 
 .products .breadcrumb {
     z-index:  1;
@@ -245,6 +265,7 @@
 
 /* 以上是breadcrumb麵包屑 */
 .products .decorate .bg_line {
+    pointer-events: none;
     position: absolute;
     bottom: -100px;
     left: 0;

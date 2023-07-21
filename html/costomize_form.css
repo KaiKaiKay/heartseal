@@ -47,6 +47,7 @@
     padding: 0 5px 10px;
     text-align: center;
     position: relative;
+    text-indent: 4px;
 }
 
 .inner h2::after {
@@ -96,6 +97,7 @@ form.customize dl.form_lnf:nth-child(odd) {
     margin: 0 80px 0 120px;
     color: #CF272A;
     text-align: center;
+    text-indent: 4px;
 }
 
 .form_lnf .required {
@@ -148,11 +150,18 @@ form.customize dl.form_lnf:nth-child(odd) {
     background-color: #0000;
     width: 150px;
     height: 45px;
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    border-radius: 100px;
+    border-radius: 400px;
     margin: 90px auto;
     display: block;
+    transition: .3s;
+}
+
+.form_lnf #form_submit_button:hover{
+    border: white solid 1px;
+    background-color: #CF272A;
+    color: white;
 }

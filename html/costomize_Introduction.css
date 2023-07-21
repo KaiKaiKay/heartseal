@@ -3,7 +3,7 @@
 }
 
 .customize {
-    background-image: url(/pic/bg2.webp);
+    background-image: url(../pic/bg2.webp);
     background-size: 20%;
     width: 100%;
     margin: auto;

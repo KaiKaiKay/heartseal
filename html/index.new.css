@@ -22,12 +22,10 @@
     display: flex;
     justify-content: center;
     margin: 150px auto;
-    /* border: #CF272A 1px solid; */
 }
 
 .index.about .inner .contents {
     display: flex;
-    /* border: #CF272A 1px solid; */
 }
 
 .index.about .inner .contents .txt {
@@ -35,7 +33,6 @@
     margin: 0px auto 0px;
     font-size: 16px;
     line-height: 2;
-    /* border: #CF272A 1px solid; */
 }
 
 .index.about .inner h2 {
@@ -49,7 +46,6 @@
     margin: 0px 150px 0 0;
     display: flex;
     text-indent: 4px;
-    /* border: #CF272A 1px solid; */
 }
 
 .index.about .decorate .bg.txt {
@@ -96,7 +92,6 @@
 .index .hot.inner {
     margin: 120px auto 150px;
     max-width: 1200px;
-    /* border: #CF272A 1px solid; */
 }
 
 .index .hot h2 {
@@ -105,11 +100,10 @@
     font-weight: 900;
     letter-spacing: 4px;
     font-size: 36px;
-    color: #4b4b4b;
+    color: #545454;
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
-    /* border: #CF272A 1px solid; */
 }
 
 .index .hot .card {
@@ -120,20 +114,17 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-    /* border: #CF272A 1px solid; */
 }
 
 .index .hot .item {
     width: 14.16666%;
     text-align: center;
-    /* border: #CF272A 1px solid; */
     position: relative;
 }
 
 .hot .item .hot_card_item_pic img {
     width: 100%;
     vertical-align: top;
-    /* border: #CF272A 1px solid; */
     border-radius: 4px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -142,7 +133,6 @@
     width: 140px;
     font-size: 16px;
     margin: 20px 0 20px 10px;
-    /* border: #CF272A 1px solid; */
     text-align: left;
     font-style: normal;
     font-weight: 600;
@@ -151,7 +141,6 @@
 .hot .item .money {
     margin: 0 10px 20px;
     font-size: 16px;
-    /* border: #CF272A 1px solid; */
     text-align: left;
     font-family: "Noto Serif";
     font-weight: 400;
@@ -213,18 +202,15 @@
     background-size: 20%;
     position: relative;
     overflow: hidden;
-    /* border: #CF272A 1px solid; */
 }
 
 .interlude .inner {
     display: flex;
     max-width: 1200px;
-    /* border: #CF272A 1px solid; */
     margin: 160px auto 180px;
 }
 
 .interlude .inner .contents {
-    /* border: #CF272A 1px solid; */
     display: flex;
     margin: auto;
 
@@ -240,7 +226,6 @@
     display: flex;
     margin: 0 0 40px;
     line-height: 1;
-    /* border: #CF272A 1px solid; */
 }
 
 .interlude .inner .contents .down {
@@ -249,7 +234,6 @@
 
 .interlude .inner .contents .pic {
     width: 40%;
-    /* border: #CF272A 1px solid; */
 }
 
 .interlude .inner .contents img {
@@ -294,7 +278,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* border: #CF272A 1px solid; */
 }
 
 .products .inner .contents h2 {
@@ -310,7 +293,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* border: #CF272A 1px solid; */
 }
 
 .products .inner .contents .card .item {
@@ -318,12 +300,10 @@
     display: flex;
     padding: 60px 0;
     justify-content: center;
-    /* border: #CF272A 1px solid; */
 }
 
 .products .inner .contents .card .pic {
     width: 41.666666%;
-    /* border: #CF272A 1px solid; */
 }
 
 .products .inner .contents .card img {
@@ -335,7 +315,6 @@
 
 .products .inner .contents .card .txt {
     width: 35%;
-    /* border: #CF272A 1px solid; */
     display: flex;
     flex-direction: column;
     align-items: self-start;
@@ -344,12 +323,11 @@
 
 .products .inner .contents .card .txt_txt {
     width: 99%;
-    /* border: #CF272A 1px solid; */
 }
 
 .products .inner .contents .card h3 {
     font-size: 20px;
-    border: #4b4b4b 1px solid;
+    border: #545454 1px solid;
     padding: 15px 25px;
     margin: 50px 0 50px 0;
     display: inline-block;
@@ -379,7 +357,7 @@
     width: 150px;
     height: 40px;
     margin: 60px auto 0;
-    font-family: "Noto Serif";
+    font-family: "Noto Sans TC";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

@@ -24,12 +24,12 @@
 
 .inner h2 {
     font-family: "Noto Serif";
-    text-decoration: underline #4b4b4b 1px;
+    text-decoration: underline #545454 1px;
     text-underline-offset: 15px;
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
-    color: #4b4b4b;
+    color: #545454;
     margin: 20px;
     text-indent: 4px;
 }
@@ -82,7 +82,7 @@
 
 .card .txt {
     width: 58%;
-    color: #4b4b4b;
+    color: #545454;
     font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;

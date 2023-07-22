@@ -171,7 +171,7 @@
     width: 140px;
     flex-direction: column;
     justify-content: center;
-    /* border: #4b4b4b 1px solid; */
+    /* border: #545454 1px solid; */
     text-align: center;
 }
 
@@ -189,14 +189,14 @@
 
 .products_navbar .container .menu a {
     display: flex;
-    color: #4b4b4b;
+    color: #545454;
     text-decoration: none;
     line-height: 2;
     padding: 10px;
     margin: 0 0 40px 0;
     justify-content: center;
     align-items: center;
-    border: #4b4b4b 1px solid;
+    border: #545454 1px solid;
 }
 
 .products_navbar .container .menu a:hover {

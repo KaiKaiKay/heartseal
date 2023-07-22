@@ -23,7 +23,7 @@
     font-weight: 500;
     padding-bottom: 30px;
     text-align: center;
-    color: #4b4b4b;
+    color: #545454;
     font-family: "Noto Serif";
     font-style: normal;
     font-weight: 900;
@@ -36,7 +36,7 @@
     font-weight: 500;
     padding: 15px;
     text-align: center;
-    color: #4b4b4b;
+    color: #545454;
     font-family: "Noto Serif";
     font-style: normal;
     font-weight: 900;
@@ -52,7 +52,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #4b4b4b;
+    background-color: #545454;
     position: absolute;
 }
 
@@ -71,7 +71,7 @@
 
 .login p {
     font-size: 14px;
-    color: #4b4b4b;
+    color: #545454;
 }
 
 .login .login_btn {

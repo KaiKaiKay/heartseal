@@ -298,14 +298,15 @@
 .products .inner .contents .card .pic {
     width: 41.666666%;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .products .inner .contents .card img {
     width: 100%;
     vertical-align: top;
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); */
     transform: scale(1);
+    transition: 5s;
 }
 
 .products .inner .contents .card img:hover {
@@ -404,7 +405,8 @@
 }
 
 .products .inner .decorate .bg_seal img:hover,
-.interlude .decorate .bg.seal img:hover {
+.interlude .decorate .bg.seal img:hover,
+.index.about .decorate .bg_pic img:hover {
     transform: rotate(5deg);
 }
 

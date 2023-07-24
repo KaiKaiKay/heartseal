@@ -59,13 +59,22 @@
     width: 76.25%;
     margin: 0 auto 12%;
     position: relative;
+    overflow: hidden;
 }
 
 .card .pic img {
     width: 100%;
     vertical-align: top;
     border-radius: 4px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* filter: drop-shadow(0px 4px 4px rgba(1, 1, 1, 0.25)); */
+    transform: scale(1);
+    transition: 5s;
+}
+
+.card .pic img:hover {
+    transition: 5s;
+    transform: scale(1.1);
+    
 }
 
 .card .txt {

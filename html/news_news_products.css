@@ -40,7 +40,6 @@
 }
 
 .card {
-    /* border: #CF272A 1px solid; */
     width: 83.33333%;
     margin: auto;
     overflow: hidden;
@@ -69,17 +68,6 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* .card .bg{
-    width: 100%;
-    height: 50%;
-    background-color: #999999;
-    position:absolute;
-    bottom: -30px;
-    left: 30px;
-    border-radius: 4px;
-    z-index: 1;
-} */
-
 .card .txt {
     width: 58%;
     color: #545454;
@@ -91,17 +79,17 @@
 
 }
 
-button a {
+.back a {
     color: #CF272A;
     text-decoration: none;
     transition: .3s;
 }
 
-button:hover>a {
+.back:hover>a {
     color: white;
 }
 
-button {
+.back {
     border: #CF272A solid 1px;
     background-color: #0000;
     width: 180px;
@@ -116,7 +104,7 @@ button {
     transition: .3s;
 }
 
-button:hover {
+.back:hover {
     border: white solid 1px;
     background-color: #CF272A;
 }
@@ -134,5 +122,3 @@ button:hover {
     right: 120px;
     width: 120px;
 }
-
-/* 以上是裝飾區 decorate*/

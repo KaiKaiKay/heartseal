@@ -12,7 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* border: #CF272A 1px solid; */
     margin: 130px auto 0px;
     align-content: center;
 }
@@ -52,7 +51,6 @@
 .card .item {
     display: flex;
     flex-wrap: wrap;
-    /* border: #CF272A 1px solid; */
     justify-content: space-around;
     margin: 0 0 180px;
 }
@@ -61,7 +59,6 @@
 
 .card .item .pic {
     width: 40%;
-    /* border: #CF272A 1px solid; */
 }
 
 .card .item .pic .store {
@@ -73,7 +70,6 @@
 
 .card .item .txt {
     width: 35%;
-    /* border: #CF272A 1px solid; */
     font-family: "Noto Serif";
     font-size: 18px;
     font-style: normal;

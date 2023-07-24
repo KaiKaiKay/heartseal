@@ -36,8 +36,7 @@
 }
 
 .index.about .inner h2 {
-    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, serif;
-    /* font-family:  "Noto Serif JP", Helvetica, Arial, sans-serif, serif; */
+    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, "Noto Serif",serif;
     writing-mode: vertical-rl;
     font-weight: 100;
     font-style: normal;
@@ -86,7 +85,6 @@
     background-color: #EBEBEC;
     overflow: hidden;
     position: relative;
-    /* border: #CF272A 1px solid;  */
 }
 
 .index .hot.inner {
@@ -147,9 +145,6 @@
     font-style: normal;
 }
 
-.hot .item img {
-    vertical-align: top;
-}
 
 .hot .item .btn {
     width: 40px;
@@ -217,8 +212,7 @@
 }
 
 .interlude .inner .contents p {
-    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, serif;
-    /* font-family:  "Noto Serif", Helvetica, Arial, sans-serif, serif; */
+    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif,  "Noto Serif",serif;
     font-weight: normal;
     text-align: center;
     font-weight: 100;
@@ -269,7 +263,6 @@
     background-color: #EBEBEC;
     position: relative;
     overflow: hidden;
-    /* border: #CF272A 1px solid;  */
 }
 
 .products .inner {
@@ -304,6 +297,7 @@
 
 .products .inner .contents .card .pic {
     width: 41.666666%;
+    overflow: hidden;
 }
 
 .products .inner .contents .card img {
@@ -311,6 +305,12 @@
     vertical-align: top;
     border-radius: 4px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    transform: scale(1);
+}
+
+.products .inner .contents .card img:hover {
+    transition: 5s;
+    transform: scale(1.1);
 }
 
 .products .inner .contents .card .txt {
@@ -340,7 +340,7 @@
     line-height: 2;
     font-size: 18px;
     font-style: normal;
-    font-weight: 350;
+    font-weight: 400;
 }
 
 .products .inner .contents .card .item:nth-child(2n) {
@@ -403,6 +403,11 @@
     width: 9%;
 }
 
+.products .inner .decorate .bg_seal img:hover,
+.interlude .decorate .bg.seal img:hover {
+    transform: rotate(5deg);
+}
+
 .products .inner .decorate .bg_txt {
     width: 100%;
 }
@@ -413,4 +418,5 @@
     left: 33%;
     width: 35%;
 }
+
 

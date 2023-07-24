@@ -13,7 +13,6 @@ body {
     color: #545454;
 }
 
-
 h1,
 h2,
 h3,
@@ -23,7 +22,6 @@ h3,
     font-weight: 900;
     letter-spacing: 4px;
     color: #545454;
-
 }
 
 header {
@@ -32,10 +30,8 @@ header {
     width: 100%;
     background-image: url(../pic/bg1.webp);
     background-size: 10%;
-    /* position: absolute; */
     margin: auto;
 }
-
 
 header .top {
     max-width: 1200px;
@@ -46,13 +42,11 @@ header .top {
     margin: auto;
 }
 
-
 header .logo {
     box-sizing: border-box;
     width: 86px;
     padding: 10px;
 }
-
 
 header .logo img {
     width: 100%;
@@ -60,13 +54,11 @@ header .logo img {
     vertical-align: top;
 }
 
-
 header .nav-area {
     display: flex;
     align-items: center;
     text-align: center;
 }
-
 
 header nav {
     font-size: 0;
@@ -74,7 +66,6 @@ header nav {
     display: flex;
     align-items: center;
 }
-
 
 header nav a {
     text-decoration: none;
@@ -89,7 +80,6 @@ header nav a {
     text-indent: 4px;
 }
 
-
 header nav a:after {
     content: '';
     position: absolute;
@@ -101,7 +91,6 @@ header nav a:after {
     transform: scaleX(0);
     transition: .2s;
 }
-
 
 header nav a:hover:after {
     transform: scaleX(1);
@@ -145,7 +134,6 @@ header nav li:hover .sub-menu>a {
     color: #CF272A;
 }
 
-
 header .icon {
     color: #333;
     display: flex;
@@ -154,12 +142,10 @@ header .icon {
     overflow: hidden;
 }
 
-
 header .icon .user,
 .icon .shopcart {
     display: inline-block;
 }
-
 
 header .icon .user {
     margin: 0 30px 0 15px;
@@ -170,6 +156,12 @@ header .icon .user {
     transform: translateY(-100%);
     filter: drop-shadow(0 30px #CF272A);
 } */
+
+header .icon .user img:hover,
+header .icon .shopcart img:hover {
+    width: 103%;
+    transform: translatex(-3%)
+}
 
 footer {
     width: 100%;
@@ -182,7 +174,6 @@ footer {
 
 .footer_inner {
     width: 1200px;
-    /* max-width: 1200px; */
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -7,6 +7,7 @@
     <title>心印｜客製說明</title>
     <link rel="stylesheet" href="same.css">
     <link rel="stylesheet" href="costomize_Introduction.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -221,7 +222,33 @@
             </div>
         </div>
     </footer>
+    <section class="login" id="login">
+        <h2>會員登入</h2>
+        <form> <input type="text" name="name" placeholder="請輸入信箱"> <input type="email" name="password"
+                placeholder="請輸入密碼">
+            <button class="login_btn">登入</button>
+            <h3>快速登入</h3>
+            <div class="sns">
+                <a class="sns_icon line" href="#"><img src="../pic/line2.png" alt="Line"></a>
+                <a class="sns_icon fb" href="#"><img src="../pic/fb2.png" alt="Facebook"></a>
+                <a class="sns_icon email" href="#"><img src="../pic/login/google_icon.png" alt="Email"></a>
+            </div>
+        </form>
+        <button class="close_btn"><img src="../pic/x.png" alt="close"></button>
+        <script>
+            const userDiv = document.querySelector(".user");
+            const loginSection = document.getElementById("login");
 
+            userDiv.addEventListener("click", () => {
+                loginSection.style.display = "flex";
+            });
+
+            const closeBtn = document.querySelector(".close_btn");
+            closeBtn.addEventListener("click", () => {
+                loginSection.style.display = "none";
+            });
+        </script>
+    </section>
 </body>
 
 </html>

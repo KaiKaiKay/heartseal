@@ -16,7 +16,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* border: #CF272A 1px solid; */
     margin: 130px auto 100px;
 }
 
@@ -29,7 +28,7 @@
     color: #545454;
     margin: 0 auto 90px;
     position: relative;
-    padding: 0 5px 10px ;
+    padding: 0 5px 10px;
     text-align: center;
     text-indent: 4px;
 }
@@ -76,7 +75,6 @@
     font-weight: 900;
     line-height: 2;
     letter-spacing: 4px;
-    /* border: #CF272A 1px solid; */
 }
 
 .customize .inner .type p,
@@ -88,7 +86,6 @@
     font-weight: 400;
     line-height: 2;
     letter-spacing: 4px;
-    /* border: #CF272A 1px solid; */
 }
 
 .customize .inner .type,
@@ -102,7 +99,6 @@
 .customize .inner .attention .card {
     display: flex;
     text-align: left;
-    /* border: #CF272A 1px solid; */
     justify-content: space-around;
     margin: 0 0 100px;
 }
@@ -111,7 +107,6 @@
 .customize .inner .process .card .item,
 .customize .inner .attention .card .item {
     width: 25%;
-    /* border: #CF272A 1px solid; */
 }
 
 
@@ -129,9 +124,9 @@
     align-items: center;
 }
 
-.customize .inner .process img{
-box-sizing: border-box;
-padding: 20px;
+.customize .inner .process img {
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .customize .inner .process .arrow {
@@ -170,18 +165,18 @@ padding: 20px;
     transition: .3s;
 }
 
-.customize .form:hover{
+.customize .form:hover {
     border: white solid 1px;
     background-color: #CF272A;
     color: white;
 }
 
-.customize .form a{
+.customize .form a {
     color: #CF272A;
     text-decoration: none;
 }
 
-.customize .form:hover >a{
+.customize .form:hover>a {
     color: white;
 }
 
@@ -202,6 +197,3 @@ padding: 20px;
     right: 120px;
     width: 120px;
 }
-
-/* 以上是裝飾區 decorate*/
-

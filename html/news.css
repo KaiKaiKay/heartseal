@@ -56,7 +56,6 @@
     margin: 0 0 115px 0;
     box-sizing: border-box;
     padding: 15px;
-    /* border: #CF272A 1px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,10 +66,8 @@
     display: flex;
     align-items: center;
     align-content: center;
-    /* border: #CF272A 1px solid; */
     margin: 1.666666%;
 }
-/* 如果刪掉flex type邊框寬度就會變正常??? */
 
 .inner .card .date {
     font-family: "Noto Serif";
@@ -121,7 +118,14 @@
     text-decoration: none;
     flex: 1;
     min-width: 0;
+    transition: .5s;
 }
+
+.inner .card .txt:hover {
+color: darkblue;
+font-weight: 500;
+}
+
 
 .decorate .bg_line {
     position: absolute;

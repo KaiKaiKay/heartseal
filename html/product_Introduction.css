@@ -107,7 +107,6 @@
     background-color: #0000;
     width: 20px;
     height: 20px;
-    /* margin: 10px 5px; */
 }
 
 .products .favorite p {
@@ -164,7 +163,6 @@
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    /* border: #CF272A 1px solid; */
     margin: 90px auto;
     box-sizing: border-box;
     justify-content: space-between;
@@ -242,7 +240,6 @@
     align-items: center;
     top: 40px;
     left: 18%;
-    /* border: #CF272A 1px solid; */
 }
 
 .products .custom-separator li {
@@ -263,7 +260,6 @@
     color: #CF272A;
 }
 
-/* 以上是breadcrumb麵包屑 */
 .products .decorate .bg_line {
     pointer-events: none;
     position: absolute;

@@ -11,8 +11,6 @@
     overflow: hidden;
 }
 
-
-
 .decorate .bg_line {
     position: absolute;
     bottom: -150px;
@@ -25,8 +23,6 @@
     right: 120px;
     width: 120px;
 }
-
-/* 以上是裝飾區 decorate*/
 
 .inner {
     max-width: 1200px;
@@ -140,11 +136,10 @@ form.customize dl.form_lnf:nth-child(odd) {
 }
 
 .form_lnf .round.button {
-    /* border: #CF272A 1px solid; */
     align-items: center;
 }
 
-.form_lnf #form_submit_button {
+.form_lnf .form_submit_button {
     color: #CF272A;
     border: #CF272A solid 1px;
     background-color: #0000;
@@ -160,7 +155,7 @@ form.customize dl.form_lnf:nth-child(odd) {
     transition: .3s;
 }
 
-.form_lnf #form_submit_button:hover{
+.form_lnf .form_submit_button:hover{
     border: white solid 1px;
     background-color: #CF272A;
     color: white;

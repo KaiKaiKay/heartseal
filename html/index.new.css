@@ -111,7 +111,7 @@
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .index .hot .item {
@@ -144,7 +144,9 @@
     font-weight: 400;
     font-style: normal;
 }
-
+.hot .item .btn img{
+    vertical-align: top;
+}
 
 .hot .item .btn {
     width: 40px;

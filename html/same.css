@@ -142,6 +142,15 @@ header .icon {
     overflow: hidden;
 }
 
+header .icon .user img{
+    width: 93%;
+}
+
+header .icon .user img:hover{
+    width: 95%;
+    transform: translatex(-3%)
+}
+
 header .icon .user,
 .icon .shopcart {
     display: inline-block;
@@ -157,7 +166,6 @@ header .icon .user {
     filter: drop-shadow(0 30px #CF272A);
 } */
 
-header .icon .user img:hover,
 header .icon .shopcart img:hover {
     width: 103%;
     transform: translatex(-3%)

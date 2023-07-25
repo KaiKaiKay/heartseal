@@ -155,16 +155,16 @@
     width: 100%;
 }
 
-.products .decorate .seal_up {
+/* .products .decorate .seal_up {
     position: absolute;
     top: 50%;
     left: 6%;
-}
+} */
 
 .products .decorate .seal_mid {
     position: absolute;
     top: 6%;
-    right: 6%;
+    left: 4%;
 }
 
 .products .decorate .seal_down {

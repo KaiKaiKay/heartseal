@@ -101,7 +101,7 @@
 }
 
 .login .close_btn {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .login .close_btn:hover>img {

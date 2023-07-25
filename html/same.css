@@ -310,7 +310,7 @@ footer {
 
 .backtotop {
     position: fixed;
-    bottom: 50%;
+    bottom: 30%;
     right: 4%;
     z-index: 10;
 }

@@ -4,6 +4,8 @@
     list-style: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@400;600;900&display=swap');
+
 
 body {
     font-family: "Noto Serif", Helvetica, Arial, sans-serif, serif;
@@ -142,11 +144,11 @@ header .icon {
     overflow: hidden;
 }
 
-header .icon .user img{
+header .icon .user img {
     width: 93%;
 }
 
-header .icon .user img:hover{
+header .icon .user img:hover {
     width: 95%;
     transform: translatex(-3%)
 }

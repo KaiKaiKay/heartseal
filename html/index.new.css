@@ -146,15 +146,15 @@
 }
 .hot .item .btn img{
     vertical-align: top;
+    width: 50%;
 }
 
 .hot .item .btn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height:30px;
     position: absolute;
-    top: 10px;
-    right: 7px;
-    padding: 3px;
+    top: 5px;
+    right: 5px;
     outline-style: none;
     background-color: #0000;
     border: none;
@@ -278,7 +278,7 @@
 .products .inner .contents h2 {
     margin: auto;
     font-size: 36px;
-    padding: 0 0 100px 0;
+    padding: 120px 0 90px 0;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -418,7 +418,7 @@
 
 .products .inner .decorate .bg_txt img {
     position: absolute;
-    top: 2%;
+    top: 5%;
     left: 33%;
     width: 35%;
 }

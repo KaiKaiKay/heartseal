@@ -11,7 +11,6 @@
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    /* border: #CF272A 1px solid; */
     margin: 130px auto 90px;
 }
 
@@ -24,7 +23,6 @@
 .products .main_products img {
     width: 100%;
     vertical-align: top;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     transform: scale(1);
     transition: 5s;
 }
@@ -38,7 +36,6 @@
     width: 33.333333%;
     display: flex;
     flex-direction: column;
-    /* border: #CF272A 1px solid; */
     margin: 0px auto;
     line-height: 1.5;
     justify-content: space-around;
@@ -58,7 +55,6 @@
     font-style: normal;
     font-weight: 400;
     letter-spacing: 4px;
-    /* text-align: center; */
     padding-bottom: 20px;
 }
 
@@ -73,7 +69,6 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    /* padding-top: 20px; */
     display: flex;
     align-items: center;
 }
@@ -191,7 +186,6 @@
 .products .other_products .item img {
     width: 100%;
     border-radius: 4px;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     transform: scale(1);
     transition: 5s;
 }
@@ -247,34 +241,6 @@
 .products .back:hover {
     border: white solid 1px;
     background-color: #CF272A;
-}
-
-
-.products .breadcrumb {
-    z-index:  1;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    top: 40px;
-    left: 18%;
-}
-
-.products .custom-separator li {
-    padding: 0 20px;
-}
-
-.products .custom-separator a {
-    text-decoration: none;
-    color: #585858;
-    font-family: "Noto Serif";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 900;
-    letter-spacing: 4px;
-}
-
-.products .custom-separator a:hover {
-    color: #CF272A;
 }
 
 .products .decorate .bg_line {

@@ -4,13 +4,10 @@
     list-style: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap');
-
-
 body {
     font-family: "Noto Serif", Helvetica, Arial, sans-serif, serif;
     font-style: normal;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-weight: 400;
     color: #545454;
 }
@@ -144,12 +141,14 @@ header .icon {
     overflow: hidden;
 }
 
-header .icon .user img {
-    width: 93%;
+header .icon .user img,
+header .icon .shopcart img {
+    width: 80%;
 }
 
-header .icon .user img:hover {
-    width: 95%;
+header .icon .user img:hover,
+header .icon .shopcart img:hover {
+    width: 85%;
     transform: translatex(-3%)
 }
 
@@ -162,17 +161,6 @@ header .icon .user {
     margin: 0 30px 0 15px;
 }
 
-/* header .icon .user:hover,
-.icon .shopcart:hover {
-    transform: translateY(-100%);
-    filter: drop-shadow(0 30px #CF272A);
-} */
-
-header .icon .shopcart img:hover {
-    width: 103%;
-    transform: translatex(-3%)
-}
-
 footer {
     width: 100%;
     background-image: url(../pic/bg1.webp);
@@ -183,7 +171,7 @@ footer {
 }
 
 .footer_inner {
-    width: 1200px;
+    width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,10 +179,10 @@ footer {
 
 .footer_inner .txt {
     color: #545454;
-    width: 33.333333%;
+    width: 30%;
     font-size: 16px;
     font-weight: 400;
-    line-height: 3;
+    line-height: 2.5;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -216,11 +204,11 @@ footer {
 
 .footer_inner .copyright {
     color: #545454;
-    width: 33.333333%;
+    width: 30%;
     font-size: 16px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 3;
+    line-height: 2.5;
     text-align: right;
 }
 
@@ -281,9 +269,8 @@ footer {
     color: #545454;
     text-align: center;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-family: Chenyuluoyan, serif, "Noto Serif", Helvetica, Arial, sans-serif;
-    /* font-family: serif; */
-    font-size: 120px;
+    font-family:'Fondamento', cursive, serif, "Noto Serif", Helvetica, Arial, sans-serif; 
+    font-size: 90px;
     font-style: normal;
     font-weight: 100;
     line-height: 51px;
@@ -292,16 +279,21 @@ footer {
 }
 
 .breadcrumb {
+    width: 100%;
     display: flex;
     position: absolute;
     align-items: center;
     top: 40px;
-    left: 18%;
+    left: 10%;
     z-index: 1;
 }
 
 .custom-separator li {
-    padding: 0 20px;
+    padding: 0 10px;
+}
+
+.custom-separator img{
+    width: 5px;
 }
 
 .custom-separator a {
@@ -320,17 +312,17 @@ footer {
 
 .backtotop {
     position: fixed;
-    bottom: 50%;
+    bottom: 5%;
     right: 2%;
     z-index: 10;
 }
 
 .backtotop img {
-    width: 90%;
+    width: 130%;
     transition: .3s;
 }
 
 .backtotop:hover img {
-    width: 100%;
+    width: 135%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }

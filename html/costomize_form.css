@@ -67,10 +67,15 @@ form.customize {
     letter-spacing: 4px;
     max-width: 75%;
     margin: 0 auto;
+    border-radius:4px;
 }
 
 form.customize dl.form_lnf:nth-child(odd) {
     background-color: lightgray;
+}
+
+form.customize dl.form_lnf:nth-child(even) {
+    background-color: white;
 }
 
 .form_lnf {
@@ -78,7 +83,6 @@ form.customize dl.form_lnf:nth-child(odd) {
     display: flex;
     align-content: center;
     align-items: center;
-    border-radius: 4px;
 }
 
 .form_lnf dt {
@@ -112,7 +116,6 @@ form.customize dl.form_lnf:nth-child(odd) {
     width: 400px;
     padding: 0 5px;
     margin: 20px;
-    border-radius: 4px;
 }
 
 .form_lnf textarea {
@@ -135,11 +138,11 @@ form.customize dl.form_lnf:nth-child(odd) {
     border: #c5c5c5 1px solid;
 }
 
-.form_lnf .round.button {
+.round.button {
     align-items: center;
 }
 
-.form_lnf .form_submit_button {
+.form_submit_button {
     color: #CF272A;
     border: #CF272A solid 1px;
     background-color: #0000;
@@ -155,7 +158,7 @@ form.customize dl.form_lnf:nth-child(odd) {
     transition: .3s;
 }
 
-.form_lnf .form_submit_button:hover{
+.form_submit_button:hover{
     border: white solid 1px;
     background-color: #CF272A;
     color: white;

@@ -9,6 +9,20 @@
     transition: 0.3s;
 }
 
+@media screen and (min-width:768px) {
+    .phone.banner.pic {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .pc.banner.pic {
+        display: none;
+    }
+}
+
+/* 以上是首頁大圖 */
+
 .index.about {
     position: relative;
     width: 100%;
@@ -24,10 +38,6 @@
     margin: 150px auto;
 }
 
-.index.about .inner .contents {
-    display: flex;
-}
-
 .index.about .inner .contents .txt {
     display: flex;
     margin: 0px auto 0px;
@@ -36,49 +46,83 @@
 }
 
 .index.about .inner h2 {
-    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, "Noto Serif",serif;
-    writing-mode: vertical-rl;
+    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, "Noto Serif", serif;
     font-weight: 100;
     font-style: normal;
     text-align: center;
-    font-size: 40px;
-    margin: 0px 150px 0 0;
     display: flex;
-    text-indent: 4px;
 }
 
-.index.about .decorate .bg.txt {
-    width: 100%;
-}
-
-.index.about .decorate .bg.txt img {
-    position: absolute;
-    top: 6%;
-    left: 10%;
-    width: 20%;
-}
-
-.index.about .decorate .bg_pic {
-    width: 100%;
-}
-
-.index.about .decorate .bg_pic img {
-    position: absolute;
-    bottom: 6%;
-    right: 20%;
-    width: 10%;
-}
-
+.index.about .decorate .bg.txt,
+.index.about .decorate .bg_pic,
 .index.about .decorate .bg_line {
     width: 100%;
 }
 
+.index.about .decorate .bg.txt img,
+.index.about .decorate .bg_pic img,
 .index.about .decorate .bg_line img {
     position: absolute;
-    top: -5%;
-    left: 0%;
-    width: 100%;
 }
+
+@media screen and (min-width:768px) {
+    .index.about .inner .contents {
+        display: flex;
+    }
+
+    .index.about .inner h2 {
+        writing-mode: vertical-rl;
+        margin: 0px 150px 0 0;
+        font-size: 40px;
+        text-indent: 4px;
+    }
+
+    .index.about .decorate .bg.txt img {
+        top: 6%;
+        left: 10%;
+        width: 20%;
+    }
+
+    .index.about .decorate .bg_pic img {
+        bottom: 6%;
+        right: 20%;
+        width: 10%;
+    }
+
+    .index.about .decorate .bg_line img {
+        top: -5%;
+        left: 0%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .index.about .inner h2 {
+        margin: 0 0 20px;
+        font-size: 30px;
+    }
+
+    .index.about .decorate .bg.txt img {
+        top: 5%;
+        left: 5%;
+        width: 40%;
+    }
+
+    .index.about .decorate .bg_pic img {
+        bottom: 5%;
+        right: 5%;
+        width: 20%;
+    }
+
+    .index.about .decorate .bg_line img {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+    }
+}
+
+/* 以上是首頁about區 */
 
 .index.hot {
     width: 100%;
@@ -88,7 +132,6 @@
 }
 
 .index .hot.inner {
-    margin: 120px auto 150px;
     max-width: 1200px;
 }
 
@@ -105,19 +148,9 @@
 }
 
 .index .hot .card {
-    max-width: 1200px;
     background-color: #EBEBEC;
     display: flex;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-around;
-}
-
-.index .hot .item {
-    width: 20%;
-    text-align: center;
-    position: relative;
 }
 
 .hot .item .hot_card_item_pic img {
@@ -128,10 +161,9 @@
 }
 
 .hot .item h3 {
-    width: 140px;
+    /* width: 140px; */
     font-size: 16px;
-    margin: 20px 0 20px 10px;
-    text-align: left;
+    margin: 20px 0 10px 10px;
     font-style: normal;
     font-weight: 600;
 }
@@ -144,30 +176,21 @@
     font-weight: 400;
     font-style: normal;
 }
-.hot .item .btn img{
+
+.hot .item .btn img {
     vertical-align: top;
-    width: 50%;
 }
 
 .hot .item .btn {
-    width: 40px;
-    height:40px;
     position: absolute;
-    top: 5px;
-    right: 5px;
     outline-style: none;
     background-color: #0000;
     border: none;
     background-color: #CF272A;
-    border-radius: 50%;
 }
 
-.hot .item .btn:hover {
-    background-color: #f00;
-}
-
-
-.index.hot .decorate .bg.txt {
+.index.hot .decorate .bg.txt,
+.index.hot .decorate .bg_line {
     pointer-events: none;
     width: 100%;
 }
@@ -175,23 +198,137 @@
 .index.hot .decorate .bg.txt img {
     pointer-events: none;
     position: absolute;
-    top: 6%;
-    left: 44.8%;
-    width: 10%;
-}
-
-.index.hot .decorate .bg_line {
-    pointer-events: none;
-    width: 100%;
 }
 
 .index.hot .decorate .bg_line img {
+    pointer-events: none;
     position: absolute;
     bottom: -15%;
     left: 0%;
     width: 100%;
     rotate: 180deg;
 }
+
+.more.button {
+    border: #CF272A solid 1px;
+    background-color: #0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    /* margin: 60px auto 0; */
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 100px;
+    transition: .3s;
+}
+
+
+.more.button a {
+    color: #CF272A;
+    text-decoration: none;
+}
+
+.more.button:hover>a {
+    color: white;
+}
+
+.hot .item .btn:hover {
+    background-color: #f00;
+}
+
+.more.button:hover {
+    border: white solid 1px;
+    background-color: #CF272A;
+}
+
+@media screen and (min-width:768px) {
+    .more.button {
+        margin: 60px auto 0;
+    }
+
+    .index .hot.inner {
+        margin: 120px auto 150px;
+    }
+
+    .index .hot .card {
+        max-width: 1200px;
+        justify-content: space-around;
+    }
+
+    .index .hot .item {
+        width: 20%;
+        position: relative;
+    }
+
+    .hot .item .btn img {
+        width: 50%;
+    }
+
+    .hot .item .btn {
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: 5px;
+        border-radius: 60%;
+    }
+
+    .index.hot .decorate .bg.txt img {
+        top: 6%;
+        left: 44.8%;
+        width: 10%;
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+    .more.button {
+        margin: 20px auto 0;
+    }
+
+    .index .hot.inner {
+        margin: 100px auto 100px;
+    }
+
+    .index .hot .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index .hot .item {
+        width: 50%;
+        flex-wrap: wrap;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .hot .item .btn img {
+        width: 60%;
+    }
+
+    .hot .item .btn {
+        width: 45px;
+        height: 45px;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
+    }
+
+    .index.hot .decorate .bg.txt img {
+        pointer-events: none;
+        position: absolute;
+        top: 2%;
+        left: 37%;
+        width: 25%;
+    }
+}
+
+/* 以上是熱門商品 */
 
 .interlude {
     width: 100%;
@@ -204,61 +341,118 @@
 .interlude .inner {
     display: flex;
     max-width: 1200px;
-    margin: 160px auto 180px;
-}
 
-.interlude .inner .contents {
-    display: flex;
-    margin: auto;
-
-}
-
-.interlude .inner .contents p {
-    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif,  "Noto Serif",serif;
-    font-weight: normal;
-    text-align: center;
-    font-weight: 100;
-    font-size: 36px;
-    display: flex;
-    margin: 0 0 40px;
-    line-height: 1;
-}
-
-.interlude .inner .contents .down {
-    margin: 0 60px;
-}
-
-.interlude .inner .contents .pic {
-    width: 40%;
 }
 
 .interlude .inner .contents img {
-    width: 100%;
     vertical-align: top;
 }
 
-.interlude .decorate .bg.txt {
+.interlude .inner .contents p {
+    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, "Noto Serif", serif;
+    font-weight: normal;
+    text-align: center;
+    font-weight: 100;
+    margin: 0 auto 40px;
+    line-height: 1;
+}
+
+.interlude .decorate .bg.txt,
+.interlude .decorate .bg.seal {
     width: 100%;
 }
 
 .interlude .decorate .bg.txt img {
     position: absolute;
-    top: 8%;
-    left: 20%;
-    width: 10%;
-}
-
-.interlude .decorate .bg.seal {
-    width: 100%;
 }
 
 .interlude .decorate .bg.seal img {
     position: absolute;
-    bottom: 0%;
-    right: 13%;
-    width: 12%;
-    rotate: 25deg;
 }
+
+@media screen and (min-width:768px) {
+    .interlude .inner .contents p {
+        font-size: 36px;
+    }
+
+    .interlude .inner {
+        margin: 160px auto 180px;
+    }
+
+    .interlude .inner .contents {
+        display: flex;
+        margin: auto;
+    }
+
+    .interlude .inner .contents img {
+        width: 100%;
+    }
+
+    .interlude .inner .contents p {
+        display: flex;
+    }
+
+    .interlude .inner .contents .down {
+        margin: 0 60px;
+    }
+
+    .interlude .decorate .bg.txt img {
+        top: 8%;
+        left: 20%;
+        width: 10%;
+    }
+
+    .interlude .decorate .bg.seal img {
+        bottom: 0%;
+        right: 13%;
+        width: 12%;
+        rotate: 25deg;
+    }
+
+    .interlude .inner .contents .pic {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .interlude .inner .contents p {
+        font-size: 30px;
+    }
+
+    .interlude .inner {
+        margin: 150px auto 150px;
+    }
+
+    .interlude .inner .contents {
+        margin: auto;
+    }
+
+    .interlude .inner .contents .pic{
+display: flex;
+justify-content: center;
+    }
+
+    .interlude .inner .contents img {
+        width: 80%;
+    }
+
+
+
+    .interlude .decorate .bg.txt img {
+        top: 8%;
+        left: 10%;
+        width: 30%;
+    }
+
+    .interlude .decorate .bg.seal img {
+        bottom: 2%;
+        right: 5%;
+        width: 25%;
+        rotate: 25deg;
+    }
+}
+
+/* 以上是love過場 */
 
 .products {
     width: 100%;
@@ -268,7 +462,6 @@
 }
 
 .products .inner {
-    margin: 150px auto 200px;
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
@@ -278,7 +471,6 @@
 .products .inner .contents h2 {
     margin: auto;
     font-size: 36px;
-    padding: 120px 0 90px 0;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -291,14 +483,12 @@
 }
 
 .products .inner .contents .card .item {
-    width: 100%;
     display: flex;
-    padding: 60px 0;
+    width: 100%;
     justify-content: center;
 }
 
 .products .inner .contents .card .pic {
-    width: 41.666666%;
     overflow: hidden;
     border-radius: 4px;
 }
@@ -306,7 +496,6 @@
 .products .inner .contents .card img {
     width: 100%;
     vertical-align: top;
-    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); */
     transform: scale(1);
     transition: 5s;
 }
@@ -317,7 +506,6 @@
 }
 
 .products .inner .contents .card .txt {
-    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: self-start;
@@ -346,47 +534,6 @@
     font-weight: 400;
 }
 
-.products .inner .contents .card .item:nth-child(2n) {
-    flex-direction: row-reverse;
-}
-
-.more.button {
-    border: #CF272A solid 1px;
-    background-color: #0000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 150px;
-    height: 40px;
-    margin: 60px auto 0;
-    font-family: "Noto Sans TC";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    border-radius: 100px;
-    transition: .3s;
-}
-
-.more.button a {
-    color: #CF272A;
-    text-decoration: none;
-}
-
-.more.button:hover>a {
-    color: white;
-}
-
-.more.button:hover {
-    border: white solid 1px;
-    background-color: #CF272A;
-}
-
-.products .inner .decorate .bg_line {
-    pointer-events: none;
-    width: 100%;
-}
-
 .products .inner .decorate .bg_line img {
     position: absolute;
     bottom: -4%;
@@ -394,16 +541,9 @@
     width: 100%;
 }
 
-
-.products .inner .decorate .bg_seal {
+.products .inner .decorate .bg_seal,
+.products .inner .decorate .bg_txt {
     width: 100%;
-}
-
-.products .inner .decorate .bg_seal img {
-    position: absolute;
-    bottom: 3%;
-    right: 10%;
-    width: 9%;
 }
 
 .products .inner .decorate .bg_seal img:hover,
@@ -412,15 +552,91 @@
     transform: rotate(5deg);
 }
 
-.products .inner .decorate .bg_txt {
-    width: 100%;
-}
-
-.products .inner .decorate .bg_txt img {
+.products .inner .decorate .bg_txt img,
+.products .inner .decorate .bg_seal img {
     position: absolute;
-    top: 5%;
-    left: 33%;
-    width: 35%;
 }
 
+@media screen and (min-width:768px) {
+    .products .inner {
+        margin: 150px auto 200px;
+    }
 
+    .products .inner .contents h2 {
+        padding: 120px 0 0px 0;
+    }
+
+    .products .inner .contents .card .item {
+        flex-direction: row;
+        padding: 60px 0;
+    }
+
+    .products .inner .contents .card .pic {
+        width: 41.666666%;
+    }
+
+    .products .inner .contents .card .txt {
+        width: 35%;
+    }
+
+    .products .inner .contents .card .item:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    .products .inner .decorate .bg_line {
+        pointer-events: none;
+        width: 100%;
+    }
+
+    .products .inner .decorate .bg_txt img {
+        position: absolute;
+        top: 5%;
+        left: 33%;
+        width: 35%;
+    }
+
+    .products .inner .decorate .bg_seal img {
+        bottom: 3%;
+        right: 10%;
+        width: 9%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .products .inner {
+        margin: 90px auto 150px;
+    }
+
+    .products .inner .contents h2 {
+        padding: 90px 0 30px 0;
+    }
+
+    .products .inner .contents .card .item {
+        flex-direction: column;
+        padding: 30px 0;
+        align-items: center;
+    }
+
+    .products .inner .contents .card .pic {
+        width: 75%;
+    }
+
+    .products .inner .contents .card .txt {
+        width: 75%;
+    }
+
+    .products .inner .decorate .bg_txt img {
+        position: absolute;
+        top: 3%;
+        left: 20%;
+        width: 60%;
+    }
+
+    .products .inner .decorate .bg_seal img {
+        bottom: 1%;
+        right: 5%;
+        width: 20%;
+    }
+}
+
+/* 以上是products */

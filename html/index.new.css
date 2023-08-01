@@ -115,7 +115,7 @@
 }
 
 .index .hot .item {
-    width: 14.16666%;
+    width: 20%;
     text-align: center;
     position: relative;
 }
@@ -150,8 +150,8 @@
 }
 
 .hot .item .btn {
-    width: 30px;
-    height:30px;
+    width: 40px;
+    height:40px;
     position: absolute;
     top: 5px;
     right: 5px;

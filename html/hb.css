@@ -65,10 +65,6 @@ header nav a {
     text-indent: 4px;
 }
 
-#menu-switch {
-    display: none;
-}
-
 @media screen and (min-width:768px) {
     header .nav-area {
         display: flex;
@@ -126,6 +122,7 @@ header nav a {
         display: none;
         position: absolute;
         padding-top: 10px;
+
     }
 
     header nav .sub-menu a {
@@ -189,7 +186,7 @@ header nav a {
         display: block;
     }
 
-    .hb label {
+    .hb a {
         width: 40px;
         height: 40px;
         background-color: #333;
@@ -198,27 +195,7 @@ header nav a {
         justify-content: space-evenly;
         align-items: center;
         border-radius: 4px;
-        position: relative;
     }
-
-    /* 02:08:15 */
-    /* #menu-switch:checked+.menu-switch .hb span:nth-child(1) {
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        transform: rotate(45deg);
-    }
-
-    #menu-switch:checked+.menu-switch .hb span:nth-child(2) {
-        display: none;
-    }
-
-    #menu-switch:checked+.menu-switch .hb span:nth-child(3) {
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        transform: rotate(-45deg);
-    } */
 
     .hb span {
         width: 75%;
@@ -236,8 +213,8 @@ header nav a {
 
     .phone-icon img {
         vertical-align: bottom;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         /* border: #CF272A 1px solid; */
         margin: 10px;
     }
@@ -292,8 +269,6 @@ header nav a {
     .icon {
         display: none;
     }
-
-
 }
 
 /* 以上是header */
@@ -393,7 +368,7 @@ footer {
 
     .footer_logo {
         bottom: 5%;
-        right: 9%;
+        right: 5%;
         width: 90px;
     }
 
@@ -410,98 +385,278 @@ footer {
         margin: 5px;
     }
 }
-
 /* 以上是footer */
 
-.banner {
+.index.banner .banner.pic {
+    width: 100%;
+}
+
+.index.banner img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 0.3s;
+}
+
+@media screen and (min-width:768px){
+.phone.banner.pic{
+    display: none;
+}
+}
+
+@media screen and (max-width:767px) {
+    .pc.banner.pic{
+        display: none;
+    }
+}
+/* 以上是首頁大圖 */
+
+.index.about {
+    position: relative;
     width: 100%;
     background-image: url(../pic/bg2.webp);
     background-size: 20%;
+    overflow: hidden
+}
+
+.index.about .inner {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 150px auto;
+}
+
+.index.about .inner .contents .txt {
+    display: flex;
+    margin: 0px auto 0px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.index.about .inner h2 {
+    font-family: Chenyuluoyan, Helvetica, Arial, sans-serif, "Noto Serif",serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    display: flex;
+}
+
+.index.about .decorate .bg.txt,
+.index.about .decorate .bg_pic,
+.index.about .decorate .bg_line {
+    width: 100%;
+}
+
+.index.about .decorate .bg.txt img,
+.index.about .decorate .bg_pic img,
+.index.about .decorate .bg_line img {
+    position: absolute;
+}
+
+@media screen and (min-width:768px){
+.index.about .inner .contents {
+    display: flex;
+}
+.index.about .inner h2 {
+    writing-mode: vertical-rl;
+    margin: 0px 150px 0 0;
+    font-size: 40px;
+    text-indent: 4px;
+}
+
+.index.about .decorate .bg.txt img {
+    top: 6%;
+    left: 10%;
+    width: 20%;
+}
+
+.index.about .decorate .bg_pic img {
+    bottom: 6%;
+    right: 20%;
+    width: 10%;
+}
+
+.index.about .decorate .bg_line img {
+    top: -5%;
+    left: 0%;
+    width: 100%;
+}
+}
+
+@media screen and (max-width:767px){
+
+    .index.about .inner h2 {
+        margin: 0 0 20px;
+        font-size: 30px;
+    }
+
+    .index.about .decorate .bg.txt img {
+        top: 5%;
+        left: 5%;
+        width: 40%;
+    }
+
+    .index.about .decorate .bg_pic img {
+        bottom: 5%;
+        right: 5%;
+        width: 20%;
+    }
+    
+    .index.about .decorate .bg_line img {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+    }
+}
+/* 以上是首頁about區 */
+
+.index.hot {
+    width: 100%;
+    background-color: #EBEBEC;
+    overflow: hidden;
     position: relative;
 }
 
-.banner_pic {
-    width: 100%;
-    flex-shrink: 0;
+.index .hot.inner {
+    margin: 120px auto 150px;
+    max-width: 1200px;
 }
 
-.banner_pic img {
-    width: 80%;
-    vertical-align: top;
-    left: 0;
-}
-
-.banner_txt {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 650px;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 200px;
-    right: 228px;
-}
-
-.banner_txt p {
-    color: #545454;
-    text-align: center;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-family: 'Fondamento', cursive, serif, "Noto Serif", Helvetica, Arial, sans-serif;
-    font-size: 90px;
-    font-style: normal;
-    font-weight: 100;
-    line-height: 51px;
-    letter-spacing: 32px;
-    text-indent: 32px;
-}
-
-.breadcrumb {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    top: 40px;
-    left: 10%;
-    z-index: 1;
-}
-
-.custom-separator li {
-    padding: 0 10px;
-}
-
-.custom-separator img {
-    width: 5px;
-}
-
-.custom-separator a {
-    text-decoration: none;
-    color: #545454;
+.index .hot h2 {
     font-family: "Noto Serif";
-    font-size: 16px;
     font-style: normal;
     font-weight: 900;
     letter-spacing: 4px;
+    font-size: 36px;
+    color: #545454;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
 }
 
-.custom-separator a:hover {
-    color: #CF272A;
+
+@media screen and (min-width:768px){}
+
+@media screen and (max-width:767px){}
+
+
+.index .hot .card {
+    max-width: 1200px;
+    background-color: #EBEBEC;
+    display: flex;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
 }
 
-.backtotop {
-    position: fixed;
-    bottom: 5%;
-    right: 2%;
-    z-index: 10;
+.index .hot .item {
+    width: 20%;
+    text-align: center;
+    position: relative;
 }
 
-.backtotop img {
-    width: 130%;
+.hot .item .hot_card_item_pic img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hot .item h3 {
+    width: 140px;
+    font-size: 16px;
+    margin: 20px 0 20px 10px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.hot .item .money {
+    margin: 0 10px 20px;
+    font-size: 16px;
+    text-align: left;
+    font-family: "Noto Serif";
+    font-weight: 400;
+    font-style: normal;
+}
+.hot .item .btn img{
+    vertical-align: top;
+    width: 50%;
+}
+
+.hot .item .btn {
+    width: 30px;
+    height:30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    outline-style: none;
+    background-color: #0000;
+    border: none;
+    background-color: #CF272A;
+    border-radius: 50%;
+}
+
+.hot .item .btn:hover {
+    background-color: #f00;
+}
+
+
+.index.hot .decorate .bg.txt {
+    pointer-events: none;
+    width: 100%;
+}
+
+.index.hot .decorate .bg.txt img {
+    pointer-events: none;
+    position: absolute;
+    top: 6%;
+    left: 44.8%;
+    width: 10%;
+}
+
+.index.hot .decorate .bg_line {
+    pointer-events: none;
+    width: 100%;
+}
+
+.index.hot .decorate .bg_line img {
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+    width: 100%;
+    rotate: 180deg;
+}
+
+.more.button {
+    border: #CF272A solid 1px;
+    background-color: #0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    margin: 60px auto 0;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 100px;
     transition: .3s;
 }
 
-.backtotop:hover img {
-    width: 135%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+.more.button a {
+    color: #CF272A;
+    text-decoration: none;
+}
+
+.more.button:hover>a {
+    color: white;
+}
+
+.more.button:hover {
+    border: white solid 1px;
+    background-color: #CF272A;
 }

@@ -12,24 +12,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 130px auto 0px;
 }
 
-.about .inner h2 {
-    font-family: "Noto Serif";
-    font-size: 36px;
+.about .inner h1 {
     font-style: normal;
     font-weight: 900;
     color: #545454;
-    margin: 0 auto 90px;
     position: relative;
-    padding: 0 5px 10px ;
+    padding: 0 5px 10px;
     text-align: center;
-    width: 180px;
     text-indent: 4px;
 }
 
-.inner h2::after {
+.inner h1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -38,6 +33,7 @@
     height: 1px;
     background-color: #545454;
 }
+/* 以上是標題 */
 
 .card {
     width: 100%;
@@ -50,16 +46,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 0 180px;
 }
 
-.card .item:nth-child(2) {
-    flex-direction: row-reverse;
-}
+
 
 .card .item .pic {
-    width: 30%;
     position: relative;
+    margin: 0 0 20px 0;
 }
 
 .card .item img {
@@ -73,25 +66,14 @@
     display: flex;
 }
 
-.card .item .pic span.bg {
-    position: absolute;
-    width: 100%;
-    height: 415px;
-    bottom: 0;
-    left: 0;
-}
-
 .card .item .txt {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    justify-content: space-evenly;
 }
 
-.card .item h3 {
+.card .item h2 {
     text-align: left;
     font-family: Chenyuluoyan;
-    font-size: 32px;
     font-style: normal;
     font-weight: 100;
     line-height: 64px;
@@ -99,35 +81,131 @@
 }
 
 .card .item p {
-    color: #000;
+    color: #545454;
     font-family: "Noto Serif";
-    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 36px;
     letter-spacing: 4px;
     padding: 0 0 0px 0px;
-    /* border: #CF272A 1px solid; */
 }
 
-.inner .pictures {
-    margin: auto;
-    margin-bottom: 200px;
-    display: grid;
-    width: 80%;
-    height: 80%;
-    /* background-color: #585858; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
-    gap: 10px;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    grid-template-areas:
-        "lt lt rt"
-        "lt lt rm"
-        "lb lb rb"
-    ;
+@media screen and (min-width:768px) {
+
+    .about .inner{
+        margin: 130px auto 0px;
+    }
+    
+    .about .inner h1 {
+        font-size: 36px;
+        width: 180px;
+        margin: 0 auto 90px;
+    }
+    .card .item{
+        margin: 0 0 180px;
+    }
+    .card .item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    .card .item .pic {
+        width: 30%;
+    }
+    .card .item .txt{
+        width: 45%;
+        justify-content: space-evenly;
+    }
+    .card .item h2{
+        font-size: 32px;
+    }
+    .card .item p {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .decorate .bg_line {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+    }
+    
+    .decorate .bg_seal {
+        position: absolute;
+        bottom: 40px;
+        right: 120px;
+        width: 120px;
+    }
+    .inner .pictures {
+        margin: auto;
+        margin-bottom: 200px;
+        display: grid;
+        width: 80%;
+        height: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        grid-template-areas:
+            "lt lt rt"
+            "lt lt rm"
+            "lb lb rb"
+        ;
+    }
 }
+
+@media screen and (max-width:767px) {
+    .about .inner{
+        margin: 100px auto 0px;
+    }
+
+    .about .inner h1 {
+        font-size: 24px;
+        width: 120px;
+        margin: 0 auto 50px;
+    }
+
+    .card .item {
+        flex-direction: column;
+        align-content: center;
+        margin: 0 0 60px;
+    }
+
+    .card .item .pic {
+        width:80%;
+    }
+    .card .item .txt{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .card .item h2{
+        font-size: 28px;
+    }
+    .card .item p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .decorate .bg_line,.decorate .bg_seal{
+        display: none;
+    }
+    .inner .pictures {
+        margin: auto;
+        margin-bottom: 100px;
+        display: grid;
+        width: 80%;
+        height: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        grid-template-areas:
+            "lt lt rt"
+            "lt lt rm"
+            "lb lb rb"
+        ;
+    }
+}
+
+
 
 .inner .pictures .pic {
     overflow: auto;
@@ -162,15 +240,3 @@
     grid-row: 3/4;
 }
 
-.decorate .bg_line {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-}
-
-.decorate .bg_seal {
-    position: absolute;
-    bottom: 40px;
-    right: 120px;
-    width: 120px;
-}

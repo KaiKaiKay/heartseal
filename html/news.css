@@ -12,24 +12,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 130px auto 100px;
 }
 
-.inner h2 {
-    font-family: "Noto Serif";
-    font-size: 36px;
+.inner h1 {
     font-style: normal;
     font-weight: 900;
     color: #545454;
-    margin: 0 auto 90px;
-    width: 180px;
     position: relative;
     padding: 0 5px 10px;
     text-align: center;
     text-indent: 4px;
 }
 
-.inner h2::after {
+.inner h1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -40,11 +35,8 @@
 }
 
 .inner .card {
-    width: 83.33333%;
     margin: auto;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -53,6 +45,10 @@
 }
 
 .inner .card .item {
+    display: flex;
+    justify-content: center;
+}
+.inner .card .item a {
     width: 90%;
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -60,78 +56,32 @@
     margin: 0 0 115px 0;
     box-sizing: border-box;
     padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.inner .card .item .top,
-.inner .card .item .down {
-    display: flex;
     align-items: center;
-    align-content: center;
-    margin: 1.666666%;
 }
+@media screen and (min-width:768px) {
+    .inner {
+        margin: 130px auto 130px;
+    }
 
-.inner .card .date {
-    font-family: "Noto Serif";
-    color: #545454;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 4px;
-    margin: 0 8% 0 1.25%;
+    .inner h1 {
+        font-size: 36px;
+        width: 180px;
+        margin: 0 auto 90px;
+    }
+
+    .inner .card {
+        width: 83.33333%;
+    }
+
+    .date-tag {
+        display: flex;
+    }
+.inner .card .item a{
+    display: flex;    
 }
-
-.inner .card .hashtag {
-    display: flex;
-    color: #CF272A;
-    font-family: "Noto Serif";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 36px;
-    letter-spacing: 4px;
+    .inner .pic {
+    width: 30%;
 }
-
-.inner .card .type {
-    color: #585858;
-    font-family: "Noto Serif";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 48px;
-    letter-spacing: 4px;
-    width: 20%;
-    height: 5.416666%;
-    border: #585858 1px solid;
-    text-align: center;
-    line-height: 65px;
-}
-
-
-
-.inner .card .txt {
-    margin: 0 20px 0 50px;
-    color: #545454;
-    font-family: "Noto Serif";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 4px;
-    text-decoration: none;
-    flex: 1;
-    min-width: 0;
-    transition: .5s;
-}
-
-.inner .card .txt:hover {
-    color: darkblue;
-    font-weight: 500;
-}
-
-
 .decorate .bg_line {
     position: absolute;
     bottom: -50px;
@@ -151,3 +101,75 @@
     right: 120px;
     width: 120px;
 }
+}
+
+@media screen and (max-width:767px) {
+    .inner {
+        margin: 100px auto 0px;
+    }
+
+    .inner h1 {
+        font-size: 24px;
+        width: 120px;
+        margin: 0 auto 50px;
+    }
+
+    .inner .card {
+        width: 90%;
+    }
+    .decorate{
+        display: none;
+    }
+}
+
+
+.inner .pic img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.inner .card .inf {
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.inner .card .date {
+    font-family: "Noto Serif";
+    color: #545454;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 4px;
+    margin: 0 3% 0 3%;
+}
+
+.inner .card .hashtag {
+    display: flex;
+    color: #CF272A;
+    font-family: "Noto Serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: 4px;
+}
+
+.inner .card .txt {
+    margin: 3% 0 0 3%;
+    color: #545454;
+    font-family: "Noto Serif";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-decoration: none;
+    min-width: 0;
+    transition: .5s;
+}
+
+.inner .card .txt:hover {
+    color: darkblue;
+    font-weight: 500;
+}
+

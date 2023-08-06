@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -163,15 +164,26 @@
                 </dl>
 
                 <dl class="form_lnf">
-                    <dt id="explain">需求說明
-                    </dt>
+                    <dt id="explain">需求說明</dt>
                     <dd>
-                        <textarea placeholder="請填寫您的需求" cols="40" rows="15"></textarea>
+                        <textarea id="talk" placeholder="請填寫您的需求" cols="40" rows="15" maxlength="300"></textarea>
+                        <p id="feedback"></p>
                     </dd>
                 </dl>
             </form>
             <input type="button" class="form_submit_button" id="form_submit_button" value="送出客製表單">
         </div>
+        <script>
+            $(document).ready(function () {
+                let textMax = $('textarea').attr('maxlength')
+                $('#feedback').html(`剩餘字數: <span style="color:red;">${textMax}</span>`)
+
+                $('#talk').keyup(function () {
+                    let textLength = $(this).val().length
+                    $('#feedback').html(`剩餘字數:<span style="color:red;">${textMax - textLength}</span>`)
+                })
+            })
+        </script>
         <div class="decorate">
             <div class="bg_pic">
                 <img class="bg_line" src="../pic/same_line.png">
@@ -179,6 +191,9 @@
             </div>
         </div>
     </section>
+
+
+
     <footer>
         <div class="footer_inner">
             <div class="txt">

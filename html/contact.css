@@ -12,25 +12,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 130px auto 0px;
-    align-content: center;
 }
 
-.contact .inner h2 {
-    font-family: "Noto Serif";
-    font-size: 36px;
+.contact .inner h1 {
     font-style: normal;
     font-weight: 900;
     color: #545454;
-    margin: 0 auto 90px;
     position: relative;
-    padding: 0 5px 10px ;
+    padding: 0 5px 10px;
     text-align: center;
-    width: 180px;
     text-indent: 4px;
 }
 
-.contact .inner h2::after {
+.contact .inner h1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -39,7 +33,6 @@
     height: 1px;
     background-color: #545454;
 }
-
 
 .card {
     width: 100%;
@@ -52,27 +45,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 0 180px;
-}
 
-
-
-.card .item .pic {
-    width: 40%;
 }
 
 .card .item .pic .store {
     width: 100%;
     vertical-align: top;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-
 }
 
 .card .item .txt {
-    width: 35%;
-    font-family: "Noto Serif";
-    font-size: 18px;
-    font-style: normal;
     font-weight: 350;
     line-height: 36px;
     display: flex;
@@ -80,46 +62,141 @@
     justify-content: center;
 }
 
-.card .item .socialmedia {
-    padding: 20px 20px 20px 0;
-}
-
-.socialmedia .icon {
-    padding: 0 15px 0 0;
-}
-
-iframe {
-    position: relative;
-    z-index: 1;
-    border-radius: 4px;
-}
-
 .map {
-    max-width: 1200px;
     width: 80%;
-    margin: auto;
-}
-
-.bg_map {
-    width: 900px;
-    height: 350px;
-    background-color: #c8c8c8;
-    bottom:320px;
-    left: -40px;
+    aspect-ratio: 1000/600;
     position: relative;
-    z-index: 0;
     border-radius: 4px;
 }
 
-.decorate .bg_line {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
+.map iframe {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:1300px){
+    .decorate .bg_seal {
+        position: absolute;
+        bottom: 40px;
+        right: 120px;
+        width: 120px;
+    }
 }
 
-.decorate .bg_seal {
-    position: absolute;
-    bottom: 40px;
-    right: 120px;
-    width: 120px;
+@media screen and (min-width:768px) {
+    .contact .inner {
+        margin: 130px auto 0px;
+    }
+
+    .contact .inner h1 {
+        font-size: 36px;
+        width: 180px;
+        margin: 0 auto 90px;
+    }
+
+    .card .item {
+        margin: 0 0 180px;
+    }
+
+    .card .item .pic {
+        width: 40%;
+    }
+
+    .card .item .txt {
+        width: 35%;
+        font-size: 18px;
+    }
+
+    .map {
+        margin: 20px auto 250px;
+    }
+
+    .decorate .bg_line {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+    }
+
+    .decorate .bg_seal {
+        position: absolute;
+        bottom: 40px;
+        right: 120px;
+        width: 120px;
+        /* display: none; */
+    }
+
+    .map {
+        background-color: #c8c8c8;
+    }
+
+    .map iframe {
+        position: absolute;
+        top: -8%;
+        right: -5%;
+    }
+
+    .card .item .socialmedia {
+        padding: 20px 20px 20px 0;
+    }
+
+    .socialmedia .icon {
+        padding: 0 15px 0 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contact .inner {
+        margin: 100px auto 0px;
+    }
+
+    .contact .inner h1 {
+        font-size: 24px;
+        width: 120px;
+        margin: 0 auto 50px;
+    }
+
+    .card .item {
+        margin: 0 0 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .item .pic {
+        width: 80%;
+        margin: 0 0 30px;
+    }
+
+    .card .item .txt {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .card .item .socialmedia {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .decorate {
+        display: none;
+    }
+
+    .map {
+        margin: 20px auto 90px;
+    }
+
+    .socialmedia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .socialmedia .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        padding: 10px 10px 0 0;
+    }
+
 }

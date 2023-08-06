@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,35 +23,33 @@
             </div>
             <div class="nav-area">
                 <div class="nav">
-                    <nav>
-                        <ul class="main-menu">
-                            <li>
-                                <a href="about.html">關於我們</a>
-                            </li>
-                            <li>
-                                <a href="news.html">最新消息</a>
-                            </li>
-                            <li>
-                                <a href="products.html">產品系列</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">所有商品</a></li>
-                                    <li><a href="#">牛角系列</a></li>
-                                    <li><a href="#">原木系列</a></li>
-                                    <li><a href="#">寶石系列</a></li>
-                                    <li><a href="#">公司印鑑</a></li>
-                                    <li><a href="#">結婚對章</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="customize_introduction.html">客製專區</a>
-                                <ul class="sub-menu">
-                                    <li><a href="customize_form.html">客製表單</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="contact.html">聯絡我們</a>
-                            </li>
-                        </ul>
+                    <nav class="main-menu">
+                        <li>
+                            <a class="big-title" href="about.html">關於我們</a>
+                        </li>
+                        <li>
+                            <a class="big-title" href="news.html">最新消息</a>
+                        </li>
+                        <li>
+                            <a class="big-title" href="products.html">產品系列</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">所有商品</a></li>
+                                <li><a href="#">牛角系列</a></li>
+                                <li><a href="#">原木系列</a></li>
+                                <li><a href="#">寶石系列</a></li>
+                                <li><a href="#">公司印鑑</a></li>
+                                <li><a href="#">結婚對章</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="big-title" href="customize_introduction.html">客製專區</a>
+                            <ul class="sub-menu">
+                                <li><a href="customize_form.html">客製表單</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="big-title" href="contact.html">聯絡我們</a>
+                        </li>
                     </nav>
                 </div>
                 <div class="icon">
@@ -61,8 +61,26 @@
                     </div>
                 </div>
             </div>
+            <div class="phone-icon">
+                <a class="user" href="#"><img src="../pic/user.svg"></a>
+                <a class="shopcart" href="#"><img src="../pic/shopping cart.svg"></a>
+            </div>
+            <div class="hb">
+                <a href="#" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
         </div>
     </header>
+    <script>
+        function toggleNav() {
+            const navArea = document.querySelector('.nav-area');
+            navArea.classList.toggle('open');
+        }
+
+    </script>
     <section class="banner">
         <div class="banner_pic">
             <img src="../pic/contact/banner.png" alt="products_banner">
@@ -80,7 +98,7 @@
             </ol>
         </nav>
         <div class="inner">
-            <h2>聯絡我們</h2>
+            <h1>聯絡我們</h1>
             <div class="card">
                 <div class="item">
                     <div class="pic store">
@@ -94,12 +112,13 @@
                             <p>地址：台北市蛋黃區金錢大道一段88號</p>
                             <p>營業時間：周一至周五 10:30~18:30</p>
                             <p>休假時間：周六、周日</p>
+                            <div class="socialmedia">
+                                <a class="icon" href="#"><img src="../pic/contact/line.png" alt="line"></a>
+                                <a class="icon" href="#"><img src="../pic/contact/fb.png" alt="fb"></a>
+                                <a class="icon" href="#"><img src="../pic/contact/google.png" alt="mail"></a>
+                            </div>
                         </div>
-                        <div class="socialmedia">
-                            <a class="icon" href="#"><img src="../pic/contact/line.png" alt="line"></a>
-                            <a class="icon" href="#"><img src="../pic/contact/fb.png" alt="fb"></a>
-                            <a class="icon" href="#"><img src="../pic/contact/google.png" alt="mail"></a>
-                        </div>
+
                     </div>
                 </div>
                 <div class="map">

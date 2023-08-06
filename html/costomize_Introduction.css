@@ -120,13 +120,13 @@
 
 @media screen and (max-width:767px) {
     .inner {
-        margin: 100px auto 0px;
+        margin: 100px auto 50px;
     }
 
     .inner h1 {
         font-size: 24px;
         width: 120px;
-        margin: 0 auto 50px;
+        margin: 0 auto 0px;
     }
 
     .customize .inner .type .card .item{
@@ -138,7 +138,7 @@
     .customize .inner .attention h2 {
         width: 120px;
         font-size: 20px;
-        margin: 60px auto 40px;
+        margin: 40px auto 40px;
         padding: 5px;
     }
 

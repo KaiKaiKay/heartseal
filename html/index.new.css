@@ -524,6 +524,11 @@ justify-content: center;
     font-weight: 900;
 }
 
+.products .inner .contents .card a{
+text-decoration: none;
+color: #545454;
+}
+
 .products .inner .contents .card p {
     font-size: 18px;
     line-height: 2;

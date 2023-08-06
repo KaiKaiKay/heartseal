@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="costomize_form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -20,35 +22,33 @@
             </div>
             <div class="nav-area">
                 <div class="nav">
-                    <nav>
-                        <ul class="main-menu">
-                            <li>
-                                <a href="about.html">關於我們</a>
-                            </li>
-                            <li>
-                                <a href="news.html">最新消息</a>
-                            </li>
-                            <li>
-                                <a href="products.html">產品系列</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">所有商品</a></li>
-                                    <li><a href="#">牛角系列</a></li>
-                                    <li><a href="#">原木系列</a></li>
-                                    <li><a href="#">寶石系列</a></li>
-                                    <li><a href="#">公司印鑑</a></li>
-                                    <li><a href="#">結婚對章</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="customize_introduction.html">客製專區</a>
-                                <ul class="sub-menu">
-                                    <li><a href="customize_form.html">客製表單</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="contact.html">聯絡我們</a>
-                            </li>
-                        </ul>
+                    <nav class="main-menu">
+                        <li>
+                            <a class="big-title" href="about.html">關於我們</a>
+                        </li>
+                        <li>
+                            <a class="big-title" href="news.html">最新消息</a>
+                        </li>
+                        <li>
+                            <a class="big-title" href="products.html">產品系列</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">所有商品</a></li>
+                                <li><a href="#">牛角系列</a></li>
+                                <li><a href="#">原木系列</a></li>
+                                <li><a href="#">寶石系列</a></li>
+                                <li><a href="#">公司印鑑</a></li>
+                                <li><a href="#">結婚對章</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="big-title" href="customize_introduction.html">客製專區</a>
+                            <ul class="sub-menu">
+                                <li><a href="customize_form.html">客製表單</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="big-title" href="contact.html">聯絡我們</a>
+                        </li>
                     </nav>
                 </div>
                 <div class="icon">
@@ -60,8 +60,26 @@
                     </div>
                 </div>
             </div>
+            <div class="phone-icon">
+                <a class="user" href="#"><img src="../pic/user.svg"></a>
+                <a class="shopcart" href="#"><img src="../pic/shopping cart.svg"></a>
+            </div>
+            <div class="hb">
+                <a href="#" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
         </div>
     </header>
+    <script>
+        function toggleNav() {
+            const navArea = document.querySelector('.nav-area');
+            navArea.classList.toggle('open');
+        }
+
+    </script>
     <section class="banner">
         <div class="banner_pic">
             <img src="../pic/customized/banner.png" alt="products_banner">
@@ -79,12 +97,10 @@
             </ol>
         </nav>
         <div class="inner">
-            <h2>客製表單</h2>
+            <h1>客製表單</h1>
             <form action="" method="post" class="customize">
                 <dl class="form_lnf">
-                    <dt>姓名
-                        <span class="required">必填</span>
-                    </dt>
+                    <dt>姓名</dt>
                     <dd>
                         <input type="text" placeholder="例：郭巴巴">
                     </dd>
@@ -93,22 +109,19 @@
                     <dt>電話
                         <span class="choose">選填</span>
                     </dt>
+
                     <dd>
                         <input type="text" placeholder="例：02-6666-8888">
                     </dd>
                 </dl>
                 <dl class="form_lnf">
-                    <dt>手機
-                        <span class="required">必填</span>
-                    </dt>
+                    <dt>手機</dt>
                     <dd>
                         <input type="tel" placeholder="例：0900-666-888">
                     </dd>
                 </dl>
                 <dl class="form_lnf">
-                    <dt>信箱
-                        <span class="required">必填</span>
-                    </dt>
+                    <dt>信箱</dt>
                     <dd>
                         <input type="email" placeholder="例：heartseal@gmail.com">
                     </dd>
@@ -124,11 +137,9 @@
                 </dl>
 
                 <dl class="form_lnf">
-                    <dt id="type">客製項目
-                        <span class="required">必填</span>
-                    </dt>
+                    <dt id="type">客製項目</dt>
                     <dd>
-                        <ul>
+                        <ul class="typecheck">
                             <li>
                                 <label>
                                     <input type="radio" name="label" value="毛孩商品製作" checked="checked">
@@ -153,14 +164,13 @@
 
                 <dl class="form_lnf">
                     <dt id="explain">需求說明
-                        <span class="required">必填</span>
                     </dt>
                     <dd>
                         <textarea placeholder="請填寫您的需求" cols="40" rows="15"></textarea>
                     </dd>
                 </dl>
             </form>
-                <input type="button" class="form_submit_button" id="form_submit_button" value="送出客製表單">
+            <input type="button" class="form_submit_button" id="form_submit_button" value="送出客製表單">
         </div>
         <div class="decorate">
             <div class="bg_pic">

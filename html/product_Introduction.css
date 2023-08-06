@@ -65,8 +65,10 @@
 
 .products .main_products .money span {
     padding-left: 10px;
-    font-size: 20px;
+    
 }
+
+
 
 .products select {
     background: #545454;
@@ -205,6 +207,10 @@
         width: 120px;
         z-index: 1;
     }
+
+    .products .main_products .money span{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -254,6 +260,10 @@
     .products .other_products .item h3,
     .products .other_products .item .money {
         font-size: 16px;
+    }
+
+    .products .main_products .money span{
+        font-size: 18px;
     }
 
     .products .back {

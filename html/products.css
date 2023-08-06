@@ -23,7 +23,6 @@
     position: relative;
     padding: 0 5px 10px;
     text-align: center;
-    text-indent: 4px;
 }
 
 .inner h1::after {

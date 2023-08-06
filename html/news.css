@@ -21,7 +21,6 @@
     position: relative;
     padding: 0 5px 10px;
     text-align: center;
-    text-indent: 4px;
 }
 
 .inner h1::after {
@@ -48,6 +47,7 @@
     display: flex;
     justify-content: center;
 }
+
 .inner .card .item a {
     width: 90%;
     border-radius: 4px;
@@ -58,6 +58,7 @@
     padding: 15px;
     align-items: center;
 }
+
 @media screen and (min-width:768px) {
     .inner {
         margin: 130px auto 130px;
@@ -76,31 +77,47 @@
     .date-tag {
         display: flex;
     }
-.inner .card .item a{
-    display: flex;    
-}
+
+    .inner .card .item a {
+        display: flex;
+    }
+
     .inner .pic {
-    width: 30%;
-}
-.decorate .bg_line {
-    position: absolute;
-    bottom: -50px;
-    left: 0px;
-}
+        width: 30%;
+    }
 
-.decorate .bg_line2 {
-    position: absolute;
-    top: -70px;
-    right: -200px;
+    .decorate .bg_line {
+        position: absolute;
+        bottom: -50px;
+        left: 0px;
+    }
 
-}
+    .decorate .bg_line2 {
+        position: absolute;
+        top: -70px;
+        right: -200px;
 
-.decorate .bg_seal {
-    position: absolute;
-    bottom: 40px;
-    right: 120px;
-    width: 120px;
-}
+    }
+
+    .decorate .bg_seal {
+        position: absolute;
+        bottom: 40px;
+        right: 120px;
+        width: 120px;
+    }
+
+    .inner .card .txt {
+        font-size: 18px;
+    }
+
+    .inner .card .txt {
+        margin: 3% 0 0 3%;
+    }
+
+    .inner .card .date {
+        margin: 0 3%;
+    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -117,10 +134,26 @@
     .inner .card {
         width: 90%;
     }
-    .decorate{
+
+    .decorate {
         display: none;
     }
+
+    .inner .card .txt {
+        font-size: 16px;
+    }
+
+    .inner .card .txt {
+        margin: 3% 0;
+    }
+
+    .inner .pic {
+        margin: 0 0 3% 0;
+    }
+
+
 }
+
 
 
 .inner .pic img {
@@ -139,9 +172,12 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 4px;
-    margin: 0 3% 0 3%;
+    line-height: 2;
+
+}
+
+.inner .card .hashtag p {
+    margin: 0 5px 0 0;
 }
 
 .inner .card .hashtag {
@@ -151,18 +187,14 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
-    line-height: 36px;
-    letter-spacing: 4px;
+    line-height: 2;
 }
 
 .inner .card .txt {
-    margin: 3% 0 0 3%;
     color: #545454;
     font-family: "Noto Serif";
-    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 4px;
     text-decoration: none;
     min-width: 0;
     transition: .5s;
@@ -172,4 +204,3 @@
     color: darkblue;
     font-weight: 500;
 }
-

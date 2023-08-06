@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
 }
 
 body {
     font-family: "Noto Serif", Helvetica, Arial, sans-serif, serif;
     font-style: normal;
-    letter-spacing: 1px;
     font-weight: 400;
     color: #545454;
 }
@@ -15,11 +15,19 @@ body {
 h1,
 h2,
 h3,
-.custom-separator a {
+.custom-separator a,
+p {
     font-family: "Noto Serif", Helvetica, Arial, sans-serif, serif;
     font-style: normal;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+h1,
+h2,
+h3,
+.custom-separator a {
     font-weight: 900;
-    letter-spacing: 4px;
     color: #545454;
 }
 
@@ -416,7 +424,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        width:500px;
+        width: 500px;
         height: 150px;
         bottom: 20%;
         right: 10%;
@@ -430,8 +438,6 @@ footer {
         font-style: normal;
         font-weight: 100;
         line-height: 51px;
-        letter-spacing: 4px;
-        text-indent: 4px;
         font-size: 90px;
     }
 }
@@ -440,12 +446,26 @@ footer {
     .banner_pic img {
         width: 100%;
     }
+
     .banner_txt p {
         display: none;
     }
 }
 
 /* 以上是banner區 */
+
+@media screen and (min-width:768px) {
+    .custom-separator a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .custom-separator a {
+        font-size: 14px;
+    }
+}
+
 .breadcrumb {
     width: 100%;
     display: flex;
@@ -454,7 +474,6 @@ footer {
     top: 40px;
     left: 10%;
     z-index: 1;
-    
     flex-wrap: wrap;
 }
 
@@ -469,16 +488,14 @@ footer {
 .custom-separator a {
     text-decoration: none;
     color: #545454;
-    font-family: "Noto Serif";
-    font-size: 16px;
     font-style: normal;
     font-weight: 900;
-    letter-spacing: 4px;
 }
 
 .custom-separator a:hover {
     color: #CF272A;
 }
+
 /* 以上是麵包屑區 */
 
 @media screen and (min-width:768px) {

@@ -7,42 +7,23 @@
     overflow: hidden;
 }
 
-.decorate .bg_line {
-    position: absolute;
-    bottom: -150px;
-    left: 0;
-}
-
-.decorate .bg_seal {
-    position: absolute;
-    bottom: 40px;
-    right: 120px;
-    width: 120px;
-}
-
 .inner {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 130px auto 100px;
 }
 
-.inner h2 {
-    font-family: "Noto Serif";
-    width: 180px;
-    font-size: 36px;
+.inner h1 {
     font-style: normal;
     font-weight: 900;
     color: #545454;
-    margin: 0 auto 90px;
+    position: relative;
     padding: 0 5px 10px;
     text-align: center;
-    position: relative;
-    text-indent: 4px;
 }
 
-.inner h2::after {
+.inner h1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -50,6 +31,78 @@
     width: 100%;
     height: 1px;
     background-color: #545454;
+}
+
+@media screen and (min-width:768px) {
+    .inner {
+        margin: 130px auto 100px;
+    }
+
+    .inner h1 {
+        font-size: 36px;
+        width: 180px;
+        margin: 0 auto 90px;
+    }
+
+    .decorate .bg_line {
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+    }
+
+    .decorate .bg_seal {
+        position: absolute;
+        bottom: 40px;
+        right: 120px;
+        width: 120px;
+    }
+
+    .form_lnf dt {
+        width: 25%;
+        margin: 0 20px;
+    }
+
+    .form_lnf input {
+        width: 180%;
+        margin: 20px;
+    }
+
+    .form_lnf .choose {
+        margin: 0 auto;
+    }
+
+    .form_lnf textarea {
+        margin: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .form_lnf {
+        flex-direction: column;
+    }
+
+    .form_lnf dt {
+        margin: 10px;
+        width: 90%
+    }
+
+    .form_lnf input {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .form_lnf textarea {
+        margin: 10px;
+        width: 90%;
+    }
+
+    dd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 
@@ -60,10 +113,9 @@ form.customize {
     font-style: normal;
     font-weight: 500;
     line-height: 2;
-    letter-spacing: 4px;
-    max-width: 75%;
+    width: 75%;
     margin: 0 auto;
-    border-radius:4px;
+    border-radius: 4px;
 }
 
 form.customize dl.form_lnf:nth-child(odd) {
@@ -77,8 +129,6 @@ form.customize dl.form_lnf:nth-child(even) {
 .form_lnf {
     padding: 10px 15px;
     display: flex;
-    align-content: center;
-    align-items: center;
 }
 
 .form_lnf dt {
@@ -90,48 +140,39 @@ form.customize dl.form_lnf:nth-child(even) {
 .form_lnf .choose {
     border: #CF272A 1px solid;
     padding: 5px 10px;
-    margin: 0 80px 0 120px;
+    margin: 0 20px;
     color: #CF272A;
-    text-align: center;
-    text-indent: 4px;
-}
-
-.form_lnf .required {
-    border: #0000 1px solid;
-    padding: 5px 10px;
-    margin: 0 84px 0 120px;
-    color: #0000;
     text-align: center;
 }
 
 .form_lnf input {
     border: #c5c5c5 1px solid;
+    height: 35px;
+    padding: 0 5px;
     display: flex;
     flex-wrap: wrap;
-    height: 35px;
-    width: 400px;
-    padding: 0 5px;
-    margin: 20px;
 }
 
 .form_lnf textarea {
+    border: #c5c5c5 1px solid;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    padding: 0 5px;
-    margin: 20px -20px;
-    border-radius: 4px;
-    border: #c5c5c5 1px solid;
+
+    font: 14px "Noto Serif";
 }
 
 .form_lnf input[type="radio"] {
-    display: inline-block;
     width: 20px;
-    margin: 20px 10px;
+    margin: 20px 0px;
     height: 20px;
     vertical-align: middle;
     display: inline-block;
     border: #c5c5c5 1px solid;
+}
+
+.typecheck {
+    margin: 0 20px;
 }
 
 .round.button {
@@ -154,8 +195,25 @@ form.customize dl.form_lnf:nth-child(even) {
     transition: .3s;
 }
 
-.form_submit_button:hover{
+.form_submit_button:hover {
     border: white solid 1px;
     background-color: #CF272A;
     color: white;
 }
+
+@media screen and (max-width:767px) {
+    .inner {
+        margin: 100px auto 0px;
+    }
+
+    .inner h1 {
+        font-size: 24px;
+        width: 120px;
+        margin: 0 auto 50px;
+    }
+
+    .decorate {
+        display: none;
+    }
+}
+

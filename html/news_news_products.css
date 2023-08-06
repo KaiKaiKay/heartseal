@@ -29,53 +29,51 @@
     font-weight: 900;
     color: #545454;
     margin: 20px;
-    text-indent: 4px;
 }
-
-.inner h2,
-.inner .date {
-    text-indent: 4px;
-}
-
 
 @media screen and (min-width:768px) {
     .inner {
-        margin: 130px auto 130px;
+        margin: 130px auto 0px;
     }
 
     .inner h1 {
         font-size: 36px;
-        width: 180px;
-        margin: 0 auto 90px;
+        margin: 10px auto 20px;
     }
-    .inner .title{
-        margin: 0 0 90px 0;    
+
+    .inner .title {
+        margin: 0 0 60px 0;
     }
+
     .card {
-        width: 83.33333%;    
+        width: 83.33333%;
     }
 
     .card .pic {
-        width: 76.25%;    
+        width: 76.25%;
     }
+
     .decorate .bg_line {
         pointer-events: none;
         position: absolute;
         bottom: -150px;
         left: 0;
     }
-    
+
     .decorate .bg_seal {
         position: absolute;
         bottom: 40px;
         right: 120px;
         width: 120px;
     }
-    .card .txt{
+
+    .card .txt {
         width: 58%;
+        font-size: 18px;
     }
+
     .back {
-        margin: 90px auto;    
+        margin: 90px auto;
     }
 }
 
@@ -86,28 +84,37 @@
 
     .inner h1 {
         font-size: 24px;
-        width: 120px;
         margin: 0 auto 20px;
     }
-    .inner .title{
-        margin: 0 0 60px 0;    
+
+    .inner h2 {
+        font-size: 18px;
     }
+
+    .inner .title {
+        margin: 0 0 60px 0;
+    }
+
     .card {
-        width: 95%;    
+        width: 95%;
     }
 
     .card .pic {
-        width:85%;    
+        width: 85%;
     }
-    .decorate{
+
+    .decorate {
         display: none;
     }
-    .card .txt{
+
+    .card .txt {
         width: 85%;
         line-height: 1.5;
+        font-size: 16px;
     }
+
     .back {
-        margin: 60px auto;    
+        margin: 60px auto;
     }
 }
 
@@ -127,7 +134,7 @@
 }
 
 .card .pic {
-    margin: 0 auto 12%;
+    margin: 0 auto 8%;
     position: relative;
     overflow: hidden;
 }
@@ -143,13 +150,15 @@
 .card .pic img:hover {
     transition: 5s;
     transform: scale(1.1);
-    
+
 }
+
+
 
 .card .txt {
     color: #545454;
     font-family: "Noto Serif";
-    font-size: 18px;
+    
     font-style: normal;
     font-weight: 350;
 }
@@ -174,7 +183,6 @@
     font-style: normal;
     font-weight: 500;
     border-radius: 400px;
-
     display: block;
     transition: .3s;
 }
@@ -185,5 +193,3 @@
     border: white solid 1px;
     background-color: #CF272A;
 }
-
-

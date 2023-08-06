@@ -483,6 +483,7 @@ footer {
 
 .custom-separator img {
     width: 5px;
+    vertical-align: top;
 }
 
 .custom-separator a {

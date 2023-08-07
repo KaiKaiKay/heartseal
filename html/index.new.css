@@ -89,7 +89,7 @@
     }
 
     .index.about .decorate .bg_line img {
-        top: -5%;
+        top: 0%;
         left: 0%;
         width: 100%;
     }
@@ -201,7 +201,7 @@
 .index.hot .decorate .bg_line img {
     pointer-events: none;
     position: absolute;
-    bottom: -15%;
+    bottom: 0%;
     left: 0%;
     width: 100%;
     rotate: 180deg;
@@ -643,3 +643,17 @@ color: #545454;
 }
 
 /* 以上是products */
+
+.textHover {
+    cursor: pointer;
+}
+
+#theDiv{
+    border: 1px solid #ccc;
+    color: #aaa;
+    padding: 5px;
+    font: 14px Tahoma;
+    background-color: antiquewhite;
+    position: absolute;
+    display: none;
+}

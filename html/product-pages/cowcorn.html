@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../same.css">
+    <link rel="stylesheet" href="product-pages-same.css">
+    <link rel="stylesheet" href="../login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+    <title>心印｜牛角系列</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="logo">
+                <a href="index.new.html"><img src="../../pic/logo.png"></a>
+            </div>
+            <div class="nav-area">
+                <div class="nav">
+                    <nav class="main-menu">
+                        <li>
+                            <a class="big-title" href="../about.html">關於我們</a>
+                        </li>
+                        <li>
+                            <a class="big-title" href="../news.html">最新消息</a>
+                        </li>
+                        <li>
+                            <a class="big-title" href="../products.html">產品系列</a>
+                            <ul class="sub-menu">
+                                <li><a href="../products.html">所有商品</a></li>
+                                <li><a href="cowcorn.html">牛角系列</a></li>
+                                <li><a href="wood.html">原木系列</a></li>
+                                <li><a href="jewel.html">寶石系列</a></li>
+                                <li><a href="business.html">公司印鑑</a></li>
+                                <li><a href="merry.html">結婚對章</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="big-title" href="customize_introduction.html">客製專區</a>
+                            <ul class="sub-menu">
+                                <li><a href="customize_form.html">客製表單</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="big-title" href="contact.html">聯絡我們</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="icon">
+                    <div class="user">
+                        <a href="#"><img src="../../pic/user.svg"></a>
+                    </div>
+                    <div class="shopcart">
+                        <a href="#"><img src="../../pic/shopping cart.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-icon">
+                <a class="user" href="#"><img src="../../pic/user.svg"></a>
+                <a class="shopcart" href="#"><img src="../../pic/shopping cart.svg"></a>
+            </div>
+            <div class="hb">
+                <a href="#" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <script>
+        function toggleNav() {
+            const navArea = document.querySelector('.nav-area');
+            navArea.classList.toggle('open');
+        }
+
+    </script>
+    <section class="banner">
+        <div class="banner_pic">
+            <img src="../../pic/products/banner.JPG" alt="products_banner">
+        </div>
+        <div class="banner_txt">
+            <p>Products</p>
+        </div>
+    </section>
+    <section class="products">
+        <div class="decorate">
+            <div class="bg_pic">
+                <img class="seal_mid" src="../../pic/products/seal_mid.png">
+                <img class="seal_down" src="../../pic/products/seal_down.png">
+                <img class="bg_line" src="../../pic/same_line.png">
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb custom-separator">
+                <li><a href="index.new.html">首頁</a></li>
+                <img src="../../pic/Vector.png">
+                <li><a href="cowcorn.html">牛角系列</a></li>
+            </ol>
+        </nav>
+        <div class="inner">
+            <h1>牛角系列</h1>
+            <div class="products_navbar">
+                <div class="container">
+                    <ul class="menu">
+                        <li><a href="../products.html">所有商品</a></li>
+                        <li><a href="cowcorn.html">牛角系列</a></li>
+                        <li><a href="wood.html">原木系列</a></li>
+                        <li><a href="jewel.html">寶石系列</a></li>
+                        <li><a href="business.html">公司印鑑</a></li>
+                        <li><a href="merry.html">結婚對章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phone-menu">
+                <ul>
+                    <li class="menu-toggle">點選系列</li>
+                    <ul class="menu-list">
+                        <li><a href="../products.html">所有商品</a></li>
+                        <li><a href="cowcorn.html">牛角系列</a></li>
+                        <li><a href="wood.html">原木系列</a></li>
+                        <li><a href="jewel.html">寶石系列</a></li>
+                        <li><a href="business.html">公司印鑑</a></li>
+                        <li><a href="merry.html">結婚對章</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $(".menu-toggle").click(function () {
+                        $(".menu-list").toggleClass("open");
+                    });
+                });
+            </script>
+            <div class="card">
+                <div class="item">
+                    <div class="pic">
+                        <a href="product_Introduction.html"><img class="products_pic"
+                                src="../../pic/products/cowcorn.png" alt="素紋牛角印章"></a>
+                    </div>
+                    <div class="txt">
+                        <div class="product_name">素紋牛角印章</div>
+                        <div class="product_money">NT$ 4,800</div>
+                        <button class="btn">
+                            <img src="../../pic/shopping cart2.svg" alt="加入購物車">
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <a href="#"><img class="products_pic" src="../../pic/products/white_cowcorn.png"
+                                alt="白花牛角印章"></a>
+                    </div>
+                    <div class="txt">
+                        <div class="product_name">白花牛角印章</div>
+                        <div class="product_money">NT$ 6,800</div>
+                        <button class="btn">
+                            <img src="../../pic/shopping cart2.svg" alt="加入購物車">
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <a href="#"><img class="products_pic" src="../../pic/products/black_cowcorn.png"
+                                alt="黑紋牛角印章"></a>
+                    </div>
+                    <div class="txt">
+                        <div class="product_name">黑紋牛角印章</div>
+                        <div class="product_money">NT$ 4,800</div>
+                        <button class="btn">
+                            <img src="../../pic/shopping cart2.svg" alt="加入購物車">
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <a href="#"><img class="products_pic" src="../../pic/products/coffee_cowcorn.png"
+                                alt="咖啡紋牛角印章"></a>
+                    </div>
+                    <div class="txt">
+                        <div class="product_name">咖啡紋牛角印章</div>
+                        <div class="product_money">NT$ 5,800</div>
+                        <button class="btn">
+                            <img src="../../pic/shopping cart2.svg" alt="加入購物車">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="backtotop">
+                <a href="#top"><img src="../../pic/up button.svg" alt="Back to top"></a>
+            </div>
+    </section>
+    <footer>
+        <div class="footer_inner">
+            <div class="txt">
+                <div class="address">
+                    <p>地址：台北市蛋黃區金錢大道一段88號</p>
+                </div>
+                <div class="opentime">
+                    <p>營業時間：周一至周五 10:30～18:30</p>
+                </div>
+                <div class="holiday">
+                    <p>休假時間：周六、周日</p>
+                </div>
+                <div class="sns">
+                    <p>SNS：</p>
+                    <br class="sp">
+                    <div class="icon">
+                        <a class="line" href="#"><img src="../../pic/line.png"></a>
+                        <a class="fb" href="#"><img src="../../pic/fb.png"></a>
+                    </div>
+                </div>
+                <div class="tel">
+                    <p>TEL：02-2345-1686</p>
+                </div>
+                <div class="mail">
+                    <p>MAIL：heartseal@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>本網站為緯育TibaMe前端工程師班第83期學員專題作品<br>本平台僅供學習、展示之用無商業用途<br>如作品有冒犯到任何智慧財產權<br>請聯繫olivegreen0408@gmail.com<br>會盡速撤銷作品</span>
+            </div>
+            <div class="footer_logo">
+                <a href="index.new.html"><img src="../../pic/logo.png"></a>
+            </div>
+        </div>
+    </footer>
+    <section class="login" id="login">
+        <h2>會員登入</h2>
+        <form> <input type="text" name="name" placeholder="請輸入信箱"> <input type="email" name="password"
+                placeholder="請輸入密碼">
+            <button class="login_btn">登入</button>
+            <h3>快速登入</h3>
+            <div class="sns">
+                <a class="sns_icon line" href="#"><img src="../../pic/line2.png" alt="Line"></a>
+                <a class="sns_icon fb" href="#"><img src="../../pic/fb2.png" alt="Facebook"></a>
+                <a class="sns_icon email" href="#"><img src="../../pic/login/google_icon.png" alt="Email"></a>
+            </div>
+        </form>
+        <div class="close_btn"><img src="../../pic/x.png" alt="close"></div>
+        <script>
+            const userDiv = document.querySelector(".user");
+            const loginSection = document.getElementById("login");
+
+            userDiv.addEventListener("click", () => {
+                loginSection.style.display = "flex";
+            });
+
+            const closeBtn = document.querySelector(".close_btn");
+            closeBtn.addEventListener("click", () => {
+                loginSection.style.display = "none";
+            });
+        </script>
+    </section>
+</body>
+
+</html>

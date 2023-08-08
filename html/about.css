@@ -1,3 +1,8 @@
+@font-face {
+    font-family: ChenYuluoyan;
+    src: url(ChenYuluoyan-Thin.ttf);
+}
+
 .about {
     background-image: url(../pic/bg2.webp);
     background-size: 20%;

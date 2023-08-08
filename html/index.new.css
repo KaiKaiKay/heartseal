@@ -21,6 +21,11 @@
     }
 }
 
+@font-face {
+    font-family: ChenYuluoyan;
+    src: url(ChenYuluoyan-Thin.ttf);
+}
+
 /* 以上是首頁大圖 */
 
 .index.about {
@@ -414,7 +419,7 @@
 
 @media screen and (max-width:767px) {
     .interlude .inner .contents p {
-        font-size:28px;
+        font-size: 28px;
     }
 
     .interlude .inner {
@@ -425,9 +430,9 @@
         margin: auto;
     }
 
-    .interlude .inner .contents .pic{
-display: flex;
-justify-content: center;
+    .interlude .inner .contents .pic {
+        display: flex;
+        justify-content: center;
     }
 
     .interlude .inner .contents img {
@@ -524,9 +529,9 @@ justify-content: center;
     font-weight: 900;
 }
 
-.products .inner .contents .card a{
-text-decoration: none;
-color: #545454;
+.products .inner .contents .card a {
+    text-decoration: none;
+    color: #545454;
 }
 
 .products .inner .contents .card p {
@@ -648,7 +653,7 @@ color: #545454;
     cursor: pointer;
 }
 
-#theDiv{
+#theDiv {
     border: 1px solid #ccc;
     color: #aaa;
     padding: 5px;

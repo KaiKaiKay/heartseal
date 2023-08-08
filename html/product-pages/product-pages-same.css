@@ -35,13 +35,13 @@
     background-color: #545454;
 }
 
+
 .inner .card {
-    max-width: 1200px;
+    width: 90%;     
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     box-sizing: border-box;
-    border: #CF272A 1px solid;
 }
 
 .inner .item {
@@ -52,7 +52,6 @@
     padding: 0 0 80px;
     display: flex;
     justify-content: flex-start;
-    border: #CF272A 1px solid;
 }
 
 .inner .card .pic {

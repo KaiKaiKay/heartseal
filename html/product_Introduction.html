@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
         rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
                             <ul class="sub-menu">
                                 <li><a href="products.html">所有商品</a></li>
                                 <li><a href="./product-pages/cowcorn.html">牛角系列</a></li>
-                                <li><a href="./html/product-pages/wood.html">原木系列</a></li>
+                                <li><a href="./product-pages/wood.html">原木系列</a></li>
                                 <li><a href="./product-pages/jewel.html">寶石系列</a></li>
                                 <li><a href="./product-pages/business.html">公司印鑑</a></li>
                                 <li><a href="./product-pages/merry.html">結婚對章</a></li>
@@ -86,10 +86,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="phone-icon">
-                <a class="user" href="#"><img src="../pic/user.svg"></a>
-                <a class="shopcart" href="#"><img src="../pic/shopping cart.svg"></a>
-            </div> -->
             <div class="hb">
                 <label onclick="toggleNav()">
                     <span></span>
@@ -100,12 +96,6 @@
         </div>
     </header>
     <section class="products">
-        <div class="decorate">
-            <div class="bg_pic">
-                <img class="bg_line" src="../pic/same_line.png">
-                <img class="bg_seal" src="../pic/products/seal_down.png">
-            </div>
-        </div>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb custom-separator">
                 <li><a href="index.new.html">首頁</a></li>
@@ -120,8 +110,31 @@
         <section class="products">
             <div class="main_products">
                 <div class="pic">
-                    <img src="../pic/products_inner/cowcorn.png" alt="素紋牛角印章">
+                    <div class="big-pic">
+                        <img src="../pic/products/cowcorn1.jpg" alt="素紋牛角印章" id="large">
+                    </div>
+                    <div class="small-pic">
+                        <img src="../pic/products/cowcorn1.jpg" alt="素紋牛角印章" class="small" />
+                        <img src="../pic/products/cowcorn2.jpg" alt="素紋牛角印章2" class="small" />
+                        <img src="../pic/products/cowcorn3.jpg" alt="素紋牛角印章3" class="small" />
+                    </div>
                 </div>
+
+                <script>
+                    function showLarge(e) {
+                        document.getElementById("large").src = e.target.src;
+                    }
+            
+                    function init() {
+                        let smalls = document.getElementsByClassName("small");
+                        for (let i = 0; i < smalls.length; i++) {
+                            smalls[i].onclick = showLarge;
+                        }
+                    }
+            
+                    window.addEventListener("load", init, false);
+                </script>
+
                 <div class="txt">
                     <div class="main_txt">
                         <h1>素紋牛角印章</h1>
@@ -150,7 +163,8 @@
                             </select>
                         </p>
                         <div class="favorite">
-                            <button class="like"><img src="../pic/products_inner/heart.png" alt="加入最愛"></button>
+                            <button class="like"><img src="../pic/products_inner/heart.png" alt="加入最愛"
+                                    id="heart"></button>
                             <p>加入最愛</p>
                         </div>
                     </div>
@@ -171,17 +185,17 @@
                 <div class="item">
                     <div class="pic"><a href="#">
                             <img src="../pic/products_inner/black_cowcorn.png" alt="黑紋牛角印章"></a>
+                        </div>
                         <h3>黑紋牛角印章</h3>
                         <p class="money">NT$ 4,800</p>
-                    </div>
                 </div>
                 <div class="item">
                     <div class="pic">
                         <a href="#">
                             <img src="../pic/products_inner/coffee_cowcorn.png" alt="咖啡紋牛角印章"></a>
+                        </div>
                         <h3>咖啡紋牛角印章</h3>
                         <p class="money">NT$ 5,800</p>
-                    </div>
                 </div>
             </div>
             <button class="back"><a href="products.html">回到商品列表</a></button>
@@ -271,9 +285,28 @@
 
             //這邊是漢堡
             function toggleNav() {
-            const navArea = document.querySelector('.nav-area');
-            navArea.classList.toggle('open');
-        }
+                const navArea = document.querySelector('.nav-area');
+                navArea.classList.toggle('open');
+            }
+
+            //這邊是加入最愛
+            function switchFavorite() {
+                let heart = document.getElementById("heart");
+                if (heart.title === "加入最愛") {
+                    heart.src = "../pic/products_inner/heart-red.png";
+                    heart.title = "取消最愛";
+                }
+                else {
+                    heart.src = "../pic/products_inner/heart.png";
+                    heart.title = "加入最愛";
+                }
+            }
+
+            function init() {
+                document.getElementById("heart").onclick = switchFavorite;
+            }
+            window.addEventListener("load", init, false);
+
 
             // 這邊是手機輪播
             $(document).ready(function () {

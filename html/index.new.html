@@ -55,7 +55,7 @@
                             <ul class="sub-menu">
                                 <li><a href="products.html">所有商品</a></li>
                                 <li><a href="./product-pages/cowcorn.html">牛角系列</a></li>
-                                <li><a href="./html/product-pages/wood.html">原木系列</a></li>
+                                <li><a href="./product-pages/wood.html">原木系列</a></li>
                                 <li><a href="./product-pages/jewel.html">寶石系列</a></li>
                                 <li><a href="./product-pages/business.html">公司印鑑</a></li>
                                 <li><a href="./product-pages/merry.html">結婚對章</a></li>
@@ -88,10 +88,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="phone-icon">
-                <a class="user" href="#"><img src="../pic/user.svg"></a>
-                <a class="shopcart" href="#"><img src="../pic/shopping cart.svg"></a>
-            </div> -->
             <div class="hb">
                 <label onclick="toggleNav()">
                     <span></span>
@@ -101,12 +97,6 @@
             </div>
         </div>
     </header>
-    <script>
-        function toggleNav() {
-            const navArea = document.querySelector('.nav-area');
-            navArea.classList.toggle('open');
-        }
-    </script>
     <div class="index banner">
         <div class="pc banner pic">
             <img src="../pic/banner.png" alt="banner">
@@ -354,6 +344,7 @@
         </div>
     </footer>
     <script>
+        // 這邊是login
         const userDiv = document.querySelector(".user");
         const loginSection = document.getElementById("login");
 
@@ -366,9 +357,11 @@
             loginSection.style.display = "none";
         });
 
-        $(document).ready(function(){
-            $
-        })
+        //這邊是漢堡
+        function toggleNav() {
+        const navArea = document.querySelector('.nav-area');
+        navArea.classList.toggle('open');
+    }
     </script>
 </body>
 

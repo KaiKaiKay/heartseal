@@ -11,22 +11,39 @@
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
-.products .main_products .pic {
+.main_products .pic{
+    cursor: pointer;
+}
+
+.products .main_products .big-pic{
     overflow: hidden;
+    border-radius: 4px;
+    width: 100%;
+    border: #dcdcdc 1px solid;
+}
+
+.products .main_products .small-pic {
+    display: flex;
+    width: 100%;
+}
+
+.products .main_products .small-pic img{
+    margin: 10px 5px 0 0;
+    width: 10%;
+    border: #dcdcdc 1px solid;
     border-radius: 4px;
 }
 
-.products .main_products img {
+.products .main_products #large {
     width: 100%;
     vertical-align: top;
     transform: scale(1);
     transition: 5s;
 }
 
-.products .main_products img:hover {
+.products .main_products #large:hover {
     transform: scale(1.05);
     transition: 5s;
 }
@@ -35,7 +52,7 @@
     flex-direction: column;
     margin: 0px auto;
     line-height: 1.5;
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
 }
 
@@ -65,8 +82,6 @@
     padding-left: 10px;
 
 }
-
-
 
 .products select {
     background: #545454;
@@ -105,10 +120,6 @@
     display: flex;
     margin: 0 10px
 }
-
-
-
-
 
 .products .shop_button .input {
     color: #CF272A;
@@ -155,11 +166,7 @@
 
 @media screen and (min-width:768px) {
     .products .main_products .pic {
-        width: 58.33333%;
-    }
-
-    .products .main_products .txt {
-        width: 33.333333%;
+        width: 50%;
     }
 
     .products .main_products h1 {
@@ -192,13 +199,15 @@
     .products .other_products .item .pic {
         box-sizing: border-box;
         overflow: hidden;
+        border: #dcdcdc 1px solid;
+        border-radius: 4px;
     }
     
     .products .other_products .item img {
         width: 100%;
-        border-radius: 4px;
         transform: scale(1);
         transition: 5s;
+        vertical-align: top;
     }
     
     .products .other_products .item img:hover {
@@ -219,22 +228,6 @@
 
     .products .back {
         margin: 0 auto 150px;
-    }
-
-    .products .decorate .bg_line {
-        pointer-events: none;
-        position: absolute;
-        bottom: -100px;
-        left: 0;
-        z-index: 1;
-    }
-
-    .products .decorate .bg_seal {
-        position: absolute;
-        bottom: 40px;
-        right: 120px;
-        width: 120px;
-        z-index: 1;
     }
 
     .products .main_products .money span {
@@ -298,10 +291,6 @@
         margin: 0 auto 90px;
     }
 
-    .products .decorate {
-        display: none;
-    }
-
     .products .shop_button .input,
     .products .shop_button .now {
         margin: 0px 5px 20px 0;
@@ -323,7 +312,6 @@
         height: auto;
         display: block;
         object-fit: cover;
-        vertical-align: middle;
     }
 
     #content {

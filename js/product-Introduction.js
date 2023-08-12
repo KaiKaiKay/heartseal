@@ -2,11 +2,11 @@
 function switchFavorite() {
     let heart = document.getElementById("heart");
     if (heart.title === "加入最愛") {
-        heart.src = "../../../pic/products_inner/heart-red.png";
+        heart.src = "../../pic/products_inner/heart-red.png";
         heart.title = "取消最愛";
     }
     else {
-        heart.src = "../../../pic/products_inner/heart.png";
+        heart.src = "../../pic/products_inner/heart.png";
         heart.title = "加入最愛";
     }
 }

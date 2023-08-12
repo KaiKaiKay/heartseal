@@ -119,7 +119,7 @@
                 <dl class="form_lnf">
                     <dt>姓名</dt>
                     <dd>
-                        <input type="text" placeholder="例：郭巴巴">
+                        <input type="text" placeholder="例：郭巴巴" required>
                     </dd>
                 </dl>
                 <dl class="form_lnf">
@@ -128,19 +128,19 @@
                     </dt>
 
                     <dd>
-                        <input type="text" placeholder="例：02-6666-8888">
+                        <input type="tel" placeholder="例：02-6666-8888">
                     </dd>
                 </dl>
                 <dl class="form_lnf">
                     <dt>手機</dt>
                     <dd>
-                        <input type="tel" placeholder="例：0900-666-888">
+                        <input type="tel" placeholder="例：0900-666-888" required>
                     </dd>
                 </dl>
                 <dl class="form_lnf">
                     <dt>信箱</dt>
                     <dd>
-                        <input type="email" placeholder="例：heartseal@gmail.com">
+                        <input type="email" placeholder="例：heartseal@gmail.com" required>
                     </dd>
                 </dl>
                 <dl class="form_lnf">
@@ -186,20 +186,9 @@
                         <p id="feedback"></p>
                     </dd>
                 </dl>
+                <button type="submit" class="form_submit_button">送出客製表單</button>
             </form>
-            <input type="button" class="form_submit_button" id="form_submit_button" value="送出客製表單">
         </div>
-        <script>
-            $(document).ready(function () {
-                let textMax = $('textarea').attr('maxlength')
-                $('#feedback').html(`可輸入字數: <span style="color:red;">${textMax}</span>`)
-
-                $('#talk').keyup(function () {
-                    let textLength = $(this).val().length
-                    $('#feedback').html(`可輸入字數:<span style="color:red;">${textMax - textLength}</span>`)
-                })
-            })
-        </script>
         <div class="decorate">
             <div class="bg_pic">
                 <img class="bg_line" src="../pic/same_line.png">
@@ -243,6 +232,18 @@
         </div>
     </footer>
     <script src="../js/same.js"></script>
+    <script>
+        //這是打字計數器
+        $(document).ready(function () {
+            let textMax = $('textarea').attr('maxlength')
+            $('#feedback').html(`可輸入字數: <span style="color:red;">${textMax}</span>`)
+
+            $('#talk').keyup(function () {
+                let textLength = $(this).val().length
+                $('#feedback').html(`可輸入字數:<span style="color:red;">${textMax - textLength}</span>`)
+            })
+        })
+    </script>
 </body>
 
 </html>

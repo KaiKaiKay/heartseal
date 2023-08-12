@@ -145,6 +145,14 @@
             width: 100%;
             vertical-align: top;
         }
+
+        .login_bg{
+            background-color: #0008;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: none;
+        }
         
         @media screen and (min-width:768px) {
 
@@ -215,10 +223,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="phone-icon">
-                <a class="user" href="#"><img src="../pic/user.svg"></a>
-                <a class="shopcart" href="#"><img src="../pic/shopping cart.svg"></a>
-            </div> -->
             <div class="hb">
                 <label onclick="toggleNav()">
                     <span></span>
@@ -228,61 +232,24 @@
             </div>
         </div>
     </header>
-    <script>
-        function toggleNav() {
-            const navArea = document.querySelector('.nav-area');
-            navArea.classList.toggle('open');
-        }
-    </script>
     <section class="login" id="login">
         <h2>會員登入</h2>
         <form class="login-form">
             <input type="email" name="name" id="username" placeholder="請輸入信箱" required>
-            </dd>
             <input type="text" name="password" id="password" placeholder="請輸入密碼" required minlength="6">
-            </dd>
             <button class="login_btn">登入</button>
             <h3>快速登入</h3>
             <div class="sns">
                 <a class="sns_icon line" href="#"><img src="../pic/line2.png" alt="Line"></a>
                 <a class="sns_icon fb" href="#"><img src="../pic/fb2.png" alt="Facebook"></a>
-                <a class="sns_icon email" href="#"><img src="../pic/email.png" alt="Email"></a>
+                <a class="sns_icon email" href="#"><img src="../pic/google.png" alt="Email"></a>
             </div>
         </form>
         <div class="close_btn"><img src="../pic/x.png" alt="close"></div>
-        <script>
-            const userDiv = document.querySelector(".user");
-            const loginSection = document.getElementById("login");
-
-            userDiv.addEventListener("click", () => {
-                loginSection.style.display = "flex";
-            });
-
-            const closeBtn = document.querySelector(".close_btn");
-            closeBtn.addEventListener("click", () => {
-                loginSection.style.display = "none";
-            });
-        </script>
-        <!-- <script>
-            $(document).ready(function () {
-                $('.hb').click(function (e) {
-                    e.preventDefault(); // 防止 <a> 的默認行為
-                    $('.hb span:nth-child(1)').css({
-                        'transform': 'translate(0px, 0px) rotate(45deg)',
-                        'transition': 'translate 0.3s 0.3s, rotate 0.3s 0.6s'
-                    });
-                    $('.hb span:nth-child(2)').css({
-                        'opacity': '0',
-                        'transition': 'opacity 0.3s'
-                    });
-                    $('.hb span:nth-child(3)').css({
-                        'transform': 'translate(0px, 0px) rotate(315deg)',
-                        'transition': 'translate 0.3s 0.3s, rotate 0.3s 0.6s'
-                    });
-                });
-            });
-        </script> -->
     </section>
+    <div class="login_bg"></div>
+    <script src="../js/same.js"></script>
+    
 </body>
 
 </html>

@@ -121,8 +121,20 @@
     margin: 0 10px
 }
 
-.products .shop_button .input {
+.products .shop_button a{
+    text-decoration: none;
+}
+
+.products .shop_button .input a{
     color: #CF272A;
+}
+
+.products .shop_button .now a{
+    color: #ffffff;
+}
+
+.products .shop_button .input {
+    
     border: #CF272A solid 1px;
     background-color: #0000;
     justify-content: center;
@@ -140,11 +152,13 @@
 
 .products .shop_button .input:hover {
     background-color: red;
-    color: #fafafa;
+}
+
+.products .shop_button .input:hover>a {
+    color: #ffffff;
 }
 
 .products .shop_button .now {
-    color: #ffffff;
     border: #CF272A solid 1px;
     background-color: #CF272A;
     justify-content: center;
@@ -178,11 +192,11 @@
     }
 
     .products .main_products{
-    margin: 130px auto 90px;    
+    margin: 130px auto 130px;    
 }
 
     .products .other_products {
-        justify-content: space-between;
+        justify-content: space-evenly;
         max-width: 1200px;
         display: flex;
         flex-wrap: wrap;
@@ -192,7 +206,7 @@
     
     .products .other_products .item {
         box-sizing: border-box;
-        width: 33%;
+        width: 25%;
         padding: 0 10px;
     }
     

@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>心印｜客製表單</title>
+    <title>心印｜購物車</title>
     <link rel="stylesheet" href="same.css">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="costomize_form.css">
+    <link rel="stylesheet" href="shop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
 </head>
 
 <body>
@@ -97,114 +96,72 @@
         </div>
     </header>
     <div class="header-bg"></div>
-    <section class="banner">
-        <div class="banner_pic">
-            <img src="../pic/customized/banner.png" alt="products_banner">
-        </div>
-        <div class="banner_txt">
-            <p>Customized</p>
-        </div>
-    </section>
-    <section class="customize">
+    <section class="shop">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb custom-separator">
                 <li><a href="index.new.html">首頁</a></li>
                 <img src="../pic/Vector.png">
-                <li><a href="customize_form.html">客製表單</a></li>
+                <li><a href="products.html">購物車</a></li>
             </ol>
         </nav>
         <div class="inner">
-            <h1>客製表單</h1>
-            <form action="" method="post" class="customize">
-                <dl class="form_lnf">
-                    <dt>姓名</dt>
-                    <dd>
-                        <input type="text" placeholder="例：郭巴巴">
-                    </dd>
-                </dl>
-                <dl class="form_lnf">
-                    <dt>電話
-                        <span class="choose">選填</span>
-                    </dt>
-
-                    <dd>
-                        <input type="text" placeholder="例：02-6666-8888">
-                    </dd>
-                </dl>
-                <dl class="form_lnf">
-                    <dt>手機</dt>
-                    <dd>
-                        <input type="tel" placeholder="例：0900-666-888">
-                    </dd>
-                </dl>
-                <dl class="form_lnf">
-                    <dt>信箱</dt>
-                    <dd>
-                        <input type="email" placeholder="例：heartseal@gmail.com">
-                    </dd>
-                </dl>
-                <dl class="form_lnf">
-                    <dt>地址
-                        <span class="choose">選填</span>
-                    </dt>
-                    <dd>
-                        <input type="text" placeholder="例：台北市蛋黃區金錢大道一段88號">
-                        <input type="text" placeholder="例：106-68">
-                    </dd>
-                </dl>
-
-                <dl class="form_lnf">
-                    <dt id="type">客製項目</dt>
-                    <dd>
-                        <ul class="typecheck">
-                            <li>
-                                <label>
-                                    <input type="radio" name="label" value="毛孩商品製作" checked="checked">
-                                    <span class="round button">毛孩商品製作</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="radio" name="label" value="嬰幼兒商品製作" checked="checked">
-                                    <span class="round button">嬰幼兒商品製作</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="radio" name="label" value="特殊寶石印章訂製" checked="checked">
-                                    <span class="round button">特殊寶石印章訂製</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </dd>
-                </dl>
-
-                <dl class="form_lnf">
-                    <dt id="explain">需求說明</dt>
-                    <dd>
-                        <textarea id="talk" placeholder="請填寫您的需求" cols="40" rows="15" maxlength="300"></textarea>
-                        <p id="feedback"></p>
-                    </dd>
-                </dl>
-            </form>
-            <input type="button" class="form_submit_button" id="form_submit_button" value="送出客製表單">
-        </div>
-        <script>
-            $(document).ready(function () {
-                let textMax = $('textarea').attr('maxlength')
-                $('#feedback').html(`可輸入字數: <span style="color:red;">${textMax}</span>`)
-
-                $('#talk').keyup(function () {
-                    let textLength = $(this).val().length
-                    $('#feedback').html(`可輸入字數:<span style="color:red;">${textMax - textLength}</span>`)
-                })
-            })
-        </script>
-        <div class="decorate">
-            <div class="bg_pic">
-                <img class="bg_line" src="../pic/same_line.png">
-                <img class="bg_seal" src="../pic/products/seal_down.png">
+            <h1>購物車</h1>
+            <div class="card">
+                <div class="item">
+                    <div class="pic">
+                        <img class="products" src="../pic/shop/shop1.png" alt="金沙黑曜石印章">
+                    </div>
+                    <div class="shop-product">
+                        <div class="txt">
+                            <p>商品名稱：金沙黑曜石印章<br>
+                                數量：1<br>
+                                金額：NT$ 9,800
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="../pic/shop/pen_icon.png" alt="修改"></a>
+                            <a href=""><img src="../pic/shop/trash bin_icon.png" alt="刪除"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img class="products" src="../pic/shop/shop2.png" alt="玫瑰石印章">
+                    </div>
+                    <div class="shop-product">
+                        <div class="txt">
+                            <p>商品名稱：玫瑰石印章<br>
+                                數量：1<br>
+                                金額：NT$ 8,800
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="../pic/shop/pen_icon.png" alt="修改"></a>
+                            <a href=""><img src="../pic/shop/trash bin_icon.png" alt="刪除"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img class="products" src="../pic/shop/shop3.png" alt="商品名稱：青金石印章">
+                    </div>
+                    <div class="shop-product">
+                        <div class="txt">
+                            <p>商品名稱：青金石印章<br>
+                                數量：1<br>
+                                金額：NT$ 9,800
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="../pic/shop/pen_icon.png" alt="修改"></a>
+                            <a href=""><img src="../pic/shop/trash bin_icon.png" alt="刪除"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <p class="sum">總金額： NT$ 28,400</p>
+        </div>
+        <button class="checkout"><a href="#">訂單結帳</a></button>
         </div>
     </section>
     <footer>

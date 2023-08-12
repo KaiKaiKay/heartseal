@@ -7,10 +7,10 @@
     <title>心印｜關於我們</title>
     <link rel="stylesheet" href="same.css">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
 </head>
 
@@ -32,6 +32,7 @@
         </form>
         <div class="close_btn"><img src="../pic/x.png" alt="close"></div>
     </section>
+    <div class="login_bg"></div>
     <header id="header">
         <div class="top">
             <div class="logo">
@@ -68,10 +69,10 @@
                         </li>
                         <!-- 以下手機版本才有 -->
                         <li>
-                            <a id="phone-login" class="big-title" href="#" id="user">會員登錄</a>
+                            <a id="phone-login" class="big-title" href="phone-login.html" id="user">會員登錄</a>
                         </li>
                         <li>
-                            <a id="phone-shoppingcart" class="big-title" href="#">購物車</a>
+                            <a id="phone-shoppingcart" class="big-title" href="shop.html">購物車</a>
                         </li>
                     </nav>
                 </div>
@@ -80,7 +81,7 @@
                         <a href="#"><img src="../pic/user.svg"></a>
                     </div>
                     <div class="shopcart">
-                        <a href="#"><img src="../pic/shopping cart.svg"></a>
+                        <a href="shop.html"><img src="../pic/shopping cart.svg"></a>
                     </div>
                 </div>
             </div>
@@ -93,6 +94,7 @@
             </div>
         </div>
     </header>
+    <div class="header-bg"></div>
     <section class="banner">
         <div class="banner_pic">
             <img src="../pic/about/banner.png" alt="products_banner">
@@ -197,34 +199,15 @@
                     <p>MAIL：heartseal@gmail.com</p>
                 </div>
             </div>
-            <div class="footer_logo">
-                <a href="index.new.html"><img src="../pic/logo.png"></a>
-            </div>
             <div class="copyright">
                 <span>本網站為緯育TibaMe前端工程師班第83期學員專題作品<br>本平台僅供學習、展示之用無商業用途<br>如作品有冒犯到任何智慧財產權<br>請聯繫olivegreen0408@gmail.com<br>會盡速撤銷作品</span>
             </div>
+            <div class="footer_logo">
+                <a href="index.new.html"><img src="../pic/logo.png"></a>
+            </div>
         </div>
     </footer>
-    <script>
-        // 這邊是login
-        const userDiv = document.querySelector(".user");
-        const loginSection = document.getElementById("login");
-
-        userDiv.addEventListener("click", () => {
-            loginSection.style.display = "flex";
-        });
-
-        const closeBtn = document.querySelector(".close_btn");
-        closeBtn.addEventListener("click", () => {
-            loginSection.style.display = "none";
-        });
-
-        //這邊是漢堡
-        function toggleNav() {
-        const navArea = document.querySelector('.nav-area');
-        navArea.classList.toggle('open');
-    }
-    </script>
+    <script src="../js/same.js"></script>
 </body>
 
 </html>

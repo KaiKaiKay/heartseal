@@ -1,8 +1,23 @@
 //這邊是漢堡
-function toggleNav() {
-    const navArea = document.querySelector('.nav-area');
-    navArea.classList.toggle('open');
-}
+// function toggleNav() {
+//     const navArea = document.querySelector('.nav-area');
+//     navArea.classList.toggle('open');
+// }
+
+$(document).ready(function () {
+    // 點擊 .hb 顯示 .nav-area 和 .nav_bg
+    $('.hb').click(function () {
+        $('.nav-area').toggleClass('open');
+        $('.nav_bg').toggleClass('open');
+    });
+
+    // 點擊 .nav_bg 關閉 .nav-area
+    $('.nav_bg').click(function () {
+        $('.nav-area').removeClass('open');
+        $('.nav_bg').removeClass('open');
+    });
+});
+
 // 這邊是login
 const userDiv = document.querySelector("#user");
 const loginSection = document.getElementById("login");

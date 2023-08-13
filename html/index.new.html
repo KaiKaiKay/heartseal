@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>心印｜首頁</title>
     <link rel="stylesheet" href="same.css">
-    <link rel="stylesheet" href="index.new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Sans+TC:wght@500&family=Noto+Serif+HK:wght@400;600;900&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="index.new.css">
 </head>
 
 <body>
@@ -97,12 +100,33 @@
         </div>
     </header>
     <div class="header-bg"></div>
-    <div class="index banner">
-        <div class="pc banner pic">
-            <img src="../pic/banner1.jpg" alt="banner">
+    <div class="nav_bg"></div>
+    <!-- 首頁大圖輪播 桌機版本-->
+    <div class="computer-banner">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="products.html"><img src="../pic/banner.png" /></a>
+            </div>
+            <div class="item">
+                <a href="products.html"><img src="../pic/banner2.jpg" /></a>
+            </div>
+            <div class="item">
+                <a href="product-pages/cowcorn.html"><img src="../pic/banner3.jpg" /></a>
+            </div>
         </div>
-        <div class="phone banner pic">
-            <img src="../pic/phone_banner2.jpg" alt="banner">
+    </div>
+    <!-- 首頁大圖輪播 桌機版本-->
+    <div class="phone-banner">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="products.html"><img src="../pic/phone_banner33.jpg" /></a>
+            </div>
+            <div class="item">
+                <a href="products.html"><img src="../pic/phone_banner11.jpg" /></a>
+            </div>
+            <div class="item">
+                <a href="product-pages/cowcorn.html"><img src="../pic/phone_banner22.jpg" /></a>
+            </div>
         </div>
     </div>
     <section class="index about">
@@ -151,12 +175,13 @@
                     </div>
                     <button class="btn">
                         <a href="shop.html">
-                        <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
+                            <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
                     </button>
                 </div>
                 <div class="item">
                     <div class="hot_card_item_pic">
-                        <a href="./product-Introduction/coffee_cowcorn.html"><img src="../pic/coffee_cowcorn.jpg" alt="咖啡紋牛角印章"></a>
+                        <a href="./product-Introduction/coffee_cowcorn.html"><img src="../pic/coffee_cowcorn.jpg"
+                                alt="咖啡紋牛角印章"></a>
                     </div>
                     <div class="txt">
                         <h3>咖啡紋牛角印章</h3>
@@ -164,7 +189,7 @@
                     </div>
                     <button class="btn">
                         <a href="shop.html">
-                        <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
+                            <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
                     </button>
                 </div>
                 <div class="item">
@@ -177,12 +202,13 @@
                     </div>
                     <button class="btn">
                         <a href="shop.html">
-                        <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
+                            <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
                     </button>
                 </div>
                 <div class="item">
                     <div class="hot_card_item_pic">
-                        <a href="./product-Introduction/redobsidian.html"><img src="../pic/redobsidian.jpg" alt="紅曜石公司印鑑大小章"></a>
+                        <a href="./product-Introduction/redobsidian.html"><img src="../pic/redobsidian.jpg"
+                                alt="紅曜石公司印鑑大小章"></a>
                     </div>
                     <div class="txt">
                         <h3>紅曜石公司印鑑</h3>
@@ -190,7 +216,7 @@
                     </div>
                     <button class="btn">
                         <a href="shop.html">
-                        <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
+                            <img src="../pic/shopping cart2.svg" alt="加入購物車"></a>
                     </button>
                 </div>
             </div>
@@ -233,8 +259,8 @@
                 <div class="card">
                     <div class="item">
                         <div class="pic">
-                            <a href="../html/product-pages/cowcorn.html"><img src="../pic/products_pic1.png" alt="牛角系列" class="textHover"
-                                    data-text="點擊觀看牛角系列"></a>
+                            <a href="../html/product-pages/cowcorn.html"><img src="../pic/products_pic1.png" alt="牛角系列"
+                                    class="textHover" data-text="點擊觀看牛角系列"></a>
                         </div>
                         <div class="txt">
                             <a href="../html/product-pages/cowcorn.html">
@@ -253,8 +279,8 @@
                     </div>
                     <div class="item">
                         <div class="pic">
-                            <a href="../html/product-pages/wood.html"><img src="../pic/products_pic2.png" alt="原木系列" class="textHover"
-                                    data-text="點擊觀看原木系列"></a>
+                            <a href="../html/product-pages/wood.html"><img src="../pic/products_pic2.png" alt="原木系列"
+                                    class="textHover" data-text="點擊觀看原木系列"></a>
                         </div>
                         <div class="txt">
                             <a href="../html/product-pages/wood.html">
@@ -274,8 +300,8 @@
                     </div>
                     <div class="item">
                         <div class="pic">
-                            <a href="../html/product-pages/jewel.html"><img src="../pic/products_pic3.png" alt="寶石系列" class="textHover"
-                                    data-text="點擊觀看寶石系列"></a>
+                            <a href="../html/product-pages/jewel.html"><img src="../pic/products_pic3.png" alt="寶石系列"
+                                    class="textHover" data-text="點擊觀看寶石系列"></a>
                         </div>
                         <div class="txt">
                             <a href="../html/product-pages/jewel.html">
@@ -348,6 +374,18 @@
         </div>
     </footer>
     <script src="../js/same.js"></script>
+    <script>
+        //大圖輪播
+        $(".owl-carousel").owlCarousel({
+            items: 1, // 一次輪播幾個項目
+            loop: true, // 循環輪播
+            margin: 10, // 與右邊圖片的距離
+            nav: true, // 導航文字
+            autoplay: true, // 自動輪播
+            autoplayTimeout: 4000, // 切換時間
+            autoplayHoverPause: true // 滑鼠經過時暫停
+        })
+    </script>
 </body>
 
 

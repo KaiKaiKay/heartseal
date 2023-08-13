@@ -586,6 +586,7 @@ footer {
 }
 
 .login {
+    font-family:"Noto Serif";
     background: url(../pic/bg1.webp);
     background-size: 10%;
     width: 360px;

@@ -158,17 +158,3 @@
     width: 100%;
     vertical-align: top;
 }
-
-@media screen and (min-width:768px) {
-
-    #phone-login,
-    #phone-shoppingcart {
-        display: none;
-    }
-}
-
-@media screen and (max-width:767px) {
-    .phone-icon {
-        display: none;
-    }
-}

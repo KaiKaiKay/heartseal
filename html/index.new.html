@@ -17,6 +17,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="index.new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="../js/WOW.js"></script>
 </head>
 
 <body>
@@ -150,13 +152,13 @@
             </div>
         </div>
         <div class="decorate">
-            <div class="bg txt">
+            <div class="bg txt wow animate__animated animate__fadeIn">
                 <img src="../pic/about.png" alt="about">
             </div>
-            <div class="bg_pic">
+            <div class="bg_pic wow animate__animated animate__fadeIn">
                 <img src="../pic/bg_seal.png" alt="青金石印章">
             </div>
-            <div class="bg_line">
+            <div class="bg_line wow animate__animated animate__fadeIn">
                 <img src="../pic/about_line2.png">
             </div>
         </div>
@@ -222,10 +224,10 @@
             </div>
             <button class="more button"><a href="products.html">READ MORE</a></button>
             <div class="decorate">
-                <div class="bg txt">
+                <div class="bg txt wow animate__animated animate__fadeIn">
                     <img src="../pic/hot.png" alt="hot">
                 </div>
-                <div class="bg_line">
+                <div class="bg_line wow animate__animated animate__fadeIn">
                     <img src="../pic/about_line2.png">
                 </div>
             </div>
@@ -244,16 +246,27 @@
             </div>
         </div>
         <div class="decorate">
-            <div class="bg seal">
+            <div class="bg seal wow animate__animated animate__fadeIn">
                 <img class="big_seal" src="../pic/big_seal.png" alt="印章">
             </div>
-            <div class="bg txt">
+            <div class="bg txt wow animate__animated animate__fadeIn">
                 <img src="../pic/love.png" alt="Love">
             </div>
         </div>
     </section>
     <section class="products">
         <div class="inner">
+            <div class="decorate">
+                <div class="bg_line wow animate__animated animate__fadeIn">
+                    <img src="../pic/about_line2.png">
+                </div>
+                <div class="bg_seal wow animate__animated animate__fadeIn">
+                    <img src="../pic/products_seal.png" alt="印章">
+                </div>
+                <div class="bg_txt wow animate__animated animate__fadeIn">
+                    <img src="../pic/products.png" alt="Products">
+                </div>
+            </div>
             <div class="contents">
                 <h2>商品系列</h2>
                 <div class="card">
@@ -323,17 +336,6 @@
             </div>
         </div>
         <button class="more button"><a href="products.html">READ MORE</a></button>
-        <div class="decorate">
-            <div class="bg_line">
-                <img src="../pic/about_line2.png">
-            </div>
-            <div class="bg_seal">
-                <img src="../pic/products_seal.png" alt="印章">
-            </div>
-            <div class="bg_txt">
-                <img src="../pic/products.png" alt="Products">
-            </div>
-        </div>
     </section>
     <div class="backtotop">
         <a href="#top"><img src="../pic/up button.svg" alt="Back to top"></a>
@@ -385,7 +387,10 @@
             autoplayTimeout: 4000, // 切換時間
             autoplayHoverPause: true // 滑鼠經過時暫停
         })
+        //這邊是WOW套件
+        new WOW().init();
     </script>
+
 </body>
 
 

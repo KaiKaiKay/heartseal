@@ -343,12 +343,12 @@
     }
 
     #contentButton li {
-        width: 8px;
-        height: 8px;
+        width: 5px;
+        height: 5px;
         border-radius: 50%;
         background-color: #ccc;
         display: inline-block;
-        margin: 20px 8px;
+        margin: 20px 6px;
         align-items: center;
     }
 

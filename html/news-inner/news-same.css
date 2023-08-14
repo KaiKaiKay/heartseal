@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .news {
     background-image: url(../../pic/bg2.webp);
     background-size: 20%;
@@ -9,20 +16,34 @@
 
 .news .inner {
     max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .inner .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .inner h1 {
     font-family: "Noto Serif";
-    text-decoration: underline #545454 1px;
+    -webkit-text-decoration: underline #545454 1px;
+            text-decoration: underline #545454 1px;
     text-underline-offset: 15px;
     font-size: 36px;
     font-style: normal;
@@ -121,16 +142,30 @@
 .card {
     margin: auto;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .card .item {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .card .pic {
@@ -143,13 +178,21 @@
     width: 100%;
     vertical-align: top;
     border-radius: 4px;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 5s;
+    -o-transition: 5s;
     transition: 5s;
 }
 
 .card .pic img:hover {
+    -webkit-transition: 5s;
+    -o-transition: 5s;
     transition: 5s;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 
 }
 
@@ -166,6 +209,8 @@
 .back a {
     color: #CF272A;
     text-decoration: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -184,6 +229,8 @@
     font-weight: 500;
     border-radius: 400px;
     display: block;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
